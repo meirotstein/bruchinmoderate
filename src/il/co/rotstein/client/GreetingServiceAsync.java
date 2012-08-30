@@ -1,4 +1,4 @@
-package il.rotstein.client;
+package il.co.rotstein.client;
 
 import com.google.gwt.user.client.rpc.AsyncCallback;
 

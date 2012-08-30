@@ -1,4 +1,4 @@
-package il.rotstein.server.queue;
+package il.co.rotstein.server.queue;
 
 import java.util.Date;
 import java.util.logging.Level;

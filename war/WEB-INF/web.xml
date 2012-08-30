@@ -8,7 +8,7 @@
 	
 	<servlet>
 		<servlet-name>mailhandler</servlet-name>
-		<servlet-class>il.rotstein.server.ModerationService</servlet-class>
+		<servlet-class>il.co.rotstein.server.ModerationService</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>mailhandler</servlet-name>

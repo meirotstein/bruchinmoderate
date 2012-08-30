@@ -1,4 +1,4 @@
-package il.rotstein.server.mail;
+package il.co.rotstein.server.mail;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -14,23 +14,23 @@ import javax.mail.internet.MimeMessage;
 
 public class MailHandler {
 
-	private final Logger log = Logger.getLogger(MailHandler.class.getName());
+	private final static Logger log = Logger.getLogger(MailHandler.class.getName());
 	
-	private Session session;
+	private static Session session;
 
-	public MailHandler( Session session) {
+	public static void init( Session _session) {
 
-		this.session = session;
+		session = _session;
 
 	}
 
-	public void replyblank( Message message ) {
+	public static void replyblank( Message message ) {
 		
 		replyblank( message , null );
 
 	}
 	
-	public void replyblank( Message message , String from ) {
+	public static void replyblank( Message message , String from ) {
 
 
 		try {
@@ -55,7 +55,7 @@ public class MailHandler {
 			
 			log.info( "Replying " + to + " from " + msg.getFrom()[0]);
 
-			Transport.send(msg);
+			Transport.send( msg );
 
 		} catch (MessagingException e) {
 			log.log(Level.WARNING, "Reply failed with exception: " + e.getMessage() , e );
@@ -63,7 +63,7 @@ public class MailHandler {
 
 	}
 	
-	public void send( 	String to ,
+	public static void send( 	String to ,
 						String cc,
 						String bcc,
 						String from, 
@@ -71,6 +71,10 @@ public class MailHandler {
 						String subject, 
 						String body, 
 						String encoding ) throws AddressException, MessagingException {
+		
+		if( session == null ){
+			throw new RuntimeException( MailHandler.class.getName() + " was not initiated" );
+		}
 		
 		MimeMessage msg = new MimeMessage( session );
 		

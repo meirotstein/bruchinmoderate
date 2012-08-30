@@ -1,4 +1,4 @@
-package il.rotstein.server;
+package il.co.rotstein.server;
 
 import java.io.InputStream;
 import java.util.Date;

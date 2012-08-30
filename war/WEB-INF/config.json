@@ -1,0 +1,12 @@
+{
+	ignore_users : ["reuts@me.com"],
+	group_name : "bruchin",
+	super_admin : "meir@rotstein.co.il",
+	min_pending_minuts : 5,
+	mail_host : "mybruchin.appspotmail.com",
+	do_not_moderate_key : "@",
+	addons: [{
+				addon_class : "il.co.rotstein.server.addons.in.KeywordAddOn",
+				params : ["\u05D0\u05DE\u05E0\u05D5\u05DF","\u05E0\u05D5\u05E2\u05D4"]
+			}]
+}

@@ -1,4 +1,4 @@
-package il.rotstein.server.queue;
+package il.co.rotstein.server.queue;
 
 import javax.mail.Message;
 

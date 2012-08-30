@@ -1,4 +1,7 @@
-package il.rotstein.server;
+package il.co.rotstein.server;
+
+import il.co.rotstein.client.GreetingService;
+import il.co.rotstein.shared.FieldVerifier;
 
 import java.io.IOException;
 
@@ -7,12 +10,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import il.rotstein.client.GreetingService;
-import il.rotstein.shared.FieldVerifier;
-
-import com.google.appengine.api.users.User;
-import com.google.appengine.api.users.UserService;
-import com.google.appengine.api.users.UserServiceFactory;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 /**
@@ -25,9 +22,6 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
 	@Override
 	public void init(ServletConfig config) throws ServletException {
 		super.init(config);
-
-		UserService userService = UserServiceFactory.getUserService();
-		User user = userService.getCurrentUser();
 	}
 	
 	

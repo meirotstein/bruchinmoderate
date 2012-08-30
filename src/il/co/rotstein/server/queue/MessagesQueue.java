@@ -1,17 +1,11 @@
-package il.rotstein.server.queue;
+package il.co.rotstein.server.queue;
 
-import il.rotstein.server.ModeratedMessage;
-import il.rotstein.server.mail.MailUtils;
+import il.co.rotstein.server.ModeratedMessage;
+import il.co.rotstein.server.mail.MailUtils;
 
-import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.StringWriter;
-import java.io.Writer;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -65,7 +59,6 @@ public class MessagesQueue {
 		if( messages.isEmpty() ) {
 			loadAll();
 			log.info( size() + " Messages loaded from queue" );
-			System.out.println( size() + " Messages loaded from queue" );
 		}
 
 	}

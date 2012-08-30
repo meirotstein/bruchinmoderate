@@ -1,6 +1,7 @@
-package il.rotstein.client;
+package il.co.rotstein.client;
 
-import il.rotstein.shared.FieldVerifier;
+import il.co.rotstein.shared.FieldVerifier;
+
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;

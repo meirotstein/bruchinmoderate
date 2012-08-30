@@ -1,4 +1,4 @@
-package il.rotstein.shared;
+package il.co.rotstein.shared;
 
 /**
  * <p>
