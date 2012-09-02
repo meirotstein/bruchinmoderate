@@ -4,6 +4,7 @@ import il.co.rotstein.server.ModeratedMessage;
 import il.co.rotstein.server.exception.MailOperationException;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -26,6 +27,8 @@ public class MailUtils {
 
 	private final static int BUFFER_SIZE = 1024; 
 
+	private static enum fetchflag { FIRST , LAST };
+	
 	/**
 	 * Serialize stream to string
 	 * @param is InputStream
@@ -115,7 +118,7 @@ public class MailUtils {
 	 * @param endPattern lower border of the section (pattern text not included), if null / no matches the lower border will be the end of text
 	 * @return
 	 */
-	private static String fetchSectionFromContent( Message message , Pattern startPattern , Pattern endPattern ) {
+	private static String fetchSectionFromContent( Message message , Pattern startPattern , Pattern endPattern , fetchflag flag ) {
 
 		String result = null;		
 
@@ -130,13 +133,35 @@ public class MailUtils {
 				Matcher sm = startPattern.matcher( body );
 
 				Matcher em = endPattern.matcher( body );
+				
+				boolean found = false;
+				int contentStart = 0;
+				int contentEnd = 0;
+				if( flag == fetchflag.LAST ){
+					
+					//find last occurrence					
+					while( sm.find() ) { 
+						found = true; 
+						contentStart = sm.start();
+						contentEnd = sm.end();
+					}
+					
+				}else{
+					
+					if( sm.find() ){
+						found = true;
+						contentStart = sm.start();
+						contentEnd = sm.end();
+					}
+					
+				}
 
-				if( sm.find() ) {
+				if( found ) {
 
-					int startPos = sm.end();
+					int startPos = contentStart;
 					int endPos;
 
-					if( em.find( startPos ) ) {
+					if( em.find( contentEnd ) ) {
 
 						endPos = em.start();
 
@@ -168,6 +193,10 @@ public class MailUtils {
 		return null;
 
 	}
+	
+	private static String fetchSectionFromContent( Message message , Pattern startPattern , Pattern endPattern ) {
+		return fetchSectionFromContent( message , startPattern , endPattern , fetchflag.FIRST );
+	}
 
 
 	public static String contentToString( Message message ) throws IOException, MessagingException {
@@ -198,14 +227,20 @@ public class MailUtils {
 	public static String fetchSenderFromInnerMessage( Message message ) throws MailOperationException {
 
 		String from = fetchLineByPattern( message , Pattern.compile( "(From:)(.*)(.+@.+\\.[a-z]+)" ) );
+		
+		if( from == null ) {
+			//fallback from particulary long 'From' sections ( typical for Walla.com emails )
+			from = fetchSectionFromContent( message, Pattern.compile( "(From:)" ) , Pattern.compile( "(>)" ) , fetchflag.LAST );
+		
+		}
 
 		if( from != null ){
 
 			int emailStart = from.lastIndexOf("<");
 			int emailEnd = from.lastIndexOf(">");
 
-			if( emailEnd != -1 && emailStart != -1 && emailEnd > emailStart){
-				String email = from.substring( emailStart + 1 , emailEnd );
+			if( emailStart != -1 && ( emailEnd == -1 || emailEnd > emailStart ) ){
+				String email = ( emailEnd == -1 ) ? from.substring( emailStart + 1 ) : from.substring( emailStart + 1 , emailEnd );
 				log.log( Level.FINE , "'From' str is " + email );
 				return email;
 			}
@@ -217,7 +252,9 @@ public class MailUtils {
 
 	public static String fetchContentFromInnerMessage( Message message ) throws MailOperationException, UnsupportedEncodingException {
 
-		String section = fetchSectionFromContent( message , Pattern.compile( "(From:)(.*)(Content-Type: text/plain;)" , Pattern.DOTALL ) , Pattern.compile( "(--)(.*)(Content-Type:)" , Pattern.DOTALL ) );
+		String section = fetchSectionFromContent( message , 
+												Pattern.compile( "(From:)(.*)((Content-Type: text/plain;)(.{0,30})(Content-Transfer-Encoding:)|(Content-Transfer-Encoding:)(.{0,30})(Content-Type: text/plain;))" , Pattern.DOTALL ) , 
+												Pattern.compile( "(--)(.*)(Content-Type:)" , Pattern.DOTALL ) );
 
 		if( section != null ) {
 			
@@ -237,13 +274,23 @@ public class MailUtils {
 
 	public static String fetchSubjectFromInnerMessage( Message message ) throws MailOperationException {
 
-		String subject = fetchLineByPattern( message , Pattern.compile( "(Subject:)(.*)" ) );
-
+//		String subject = fetchLineByPattern( message , Pattern.compile( "(Subject:)(.*)" ) );
+		String subject = fetchSectionFromContent(message, Pattern.compile( "(\nSubject:)" ), Pattern.compile( "(\n(.*):)" ) );
+		
 		if( subject != null ){
 			
 			log.log( Level.FINE , "Fetched subject: " + subject );
 			
-			return subject.substring( 8 );
+			try {
+				
+				return MimeUtility.decodeText( subject.trim().substring( 8 ) );
+				
+			} catch (UnsupportedEncodingException e) {
+				
+				log.warning( "Cannot decode subject: " + subject );
+				return subject.substring( 8 );
+				
+			}
 		}
 
 		throw new MailOperationException( "fail to fetch Subject from inner message" );
@@ -254,26 +301,51 @@ public class MailUtils {
 
 		try {
 
-			if( content == null )
+			if( content == null ) 
 				throw new RuntimeException( "Content is null" );
+			
+			log.log( Level.FINE , "decoding content: " + content );
 
 			String charset;
 			String encoing;
+			
+			Pattern contentP = Pattern.compile( "(Content-Type: text/plain;)(.{0,30})(Content-Transfer-Encoding:)|(Content-Transfer-Encoding:)(.{0,30})(Content-Type: text/plain;)" , Pattern.DOTALL );
+			Matcher contentM = contentP.matcher( content );
+			
+			//find last occurrence
+			Boolean found = false;
+			int contentStart = 0;
+			while( contentM.find() ) { 
+				found = true; 
+				contentStart = contentM.start();
+			}
+			
+			if( !found ) {
+				throw new RuntimeException( "Unknown content structure" );
+			}
+			
+			String actualContent = content.substring( contentStart );
 
 			Pattern charsetP = Pattern.compile( "(charset=)(.*)" );
-			Matcher charsetM = charsetP.matcher( content );
+			Matcher charsetM = charsetP.matcher( actualContent );
 
 			if( charsetM.find() ) {
-				charset = content.substring( charsetM.start() + 8 , charsetM.end() ).replace( "\"", "" ).trim();
+				charset = actualContent.substring( charsetM.start() + 8 , charsetM.end() ).replace( "\"", "" ).trim();
+				
+				//hack for utf-8 variants
+				if( charset != null && !charset.toLowerCase().equals( "utf-8" ) && charset.toLowerCase().contains( "utf-8" ) ) {
+					charset = "utf-8";
+				}
+				
 			} else {
 				throw new RuntimeException( "Cannot find charset expression" );
 			}
 
 			Pattern enocdeP = Pattern.compile( "(Content-Transfer-Encoding: )(.*)" );
-			Matcher enocdeM = enocdeP.matcher( content );
+			Matcher encodeM = enocdeP.matcher( actualContent );
 
-			if( enocdeM.find() ) {
-				encoing = content.substring( enocdeM.start() + 27 , enocdeM.end() ).trim();
+			if( encodeM.find() ) {
+				encoing = actualContent.substring( encodeM.start() + 27 , encodeM.end() ).trim();
 			} else {
 				throw new RuntimeException( "Cannot find encoding expression" );
 			}
@@ -281,11 +353,11 @@ public class MailUtils {
 			if( "".equals( encoing ) || "".equals( charset ) )
 				throw new RuntimeException( "no charset or encoding" );
 
-
+			int endOfEncodeDetails = ( charsetM.end() > encodeM.end() ) ? charsetM.end() : encodeM.end();
 
 			return MimeUtility.decodeText( "=?" + charset + "?" + 
 					encoing.toUpperCase().charAt( 0 ) + "?" + 
-					content.substring( enocdeM.end() ).trim().replaceAll(" " ,  "" ).replaceAll( "\n" , "" ) + "?=" );
+					actualContent.substring( endOfEncodeDetails ).trim().replaceAll(" " ,  "" ).replaceAll( "\n" , "" ).replaceAll( "\r" , "" ) + "?=" );
 
 		} catch (RuntimeException e) {
 

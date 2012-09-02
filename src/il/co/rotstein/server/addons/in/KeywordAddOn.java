@@ -1,12 +1,15 @@
 package il.co.rotstein.server.addons.in;
 
 import java.io.UnsupportedEncodingException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.internet.AddressException;
+
 
 import il.co.rotstein.server.addons.InAddOn;
 import il.co.rotstein.server.common.StringPatterns;
@@ -17,29 +20,62 @@ import il.co.rotstein.server.mail.MailUtils;
 
 public class KeywordAddOn extends InAddOn {
 	
-	private final Logger log = Logger.getLogger(KeywordAddOn.class.getName());
+	private final Logger log = Logger.getLogger( KeywordAddOn.class.getName() );
 	
-	private static int FIRST_CHARS_TO_CHECK = 35;
+	//private static int FIRST_CHARS_TO_CHECK = 35;
+	
+	private Map<String, Integer> keywords;
 
 	@Override
-	public AddOnResult manipulate(Message message) {
+	public AddOnResult manipulate( Message message ) {
 		
 		try {
 			
 			String subject = MailUtils.fetchSubjectFromInnerMessage( message );
-			String content = MailUtils.fetchContentFromInnerMessage( message );
+			String content = "";
 			
-			if( content.length() < FIRST_CHARS_TO_CHECK ) {
-				FIRST_CHARS_TO_CHECK = content.length() - 1;
+			try {
+				
+				content = MailUtils.fetchContentFromInnerMessage( message );
+				
+			} catch (MailOperationException e) {
+				
+				log.log( Level.WARNING , "Fail to fetch details for content, considering empty content: " + e.getMessage() );
+				
 			}
 			
-			log.log( Level.FINE , "Keyword Add On.\nSubject: " + subject + "\nContent: " + content.substring( 0 ,  FIRST_CHARS_TO_CHECK ) );
+			if( content == null ) 
+				content = "";
+			if( subject == null ) 
+				subject = "";
 			
-			for( String keyword : parameters ) {
+			log.log( Level.FINE , "Keyword Add On.\nSubject: " + subject + "\nContent: " + content );
+			
+			if( keywords == null ) {
+				
+				keywords = new HashMap<String, Integer>();
+			
+				for( String param : parameters ) {					
+					
+					String[] values = param.split(",");
+					
+					keywords.put( values[0] , ( values.length > 1 ) ? new Integer( values[1] ) : new Integer( Integer.MAX_VALUE ) );
+					
+				}
+				
+			}
+			
+			for( String key : keywords.keySet() ) {
+				
+				String keyword = key;
+				Integer numOfChars = keywords.get( key );
 				
 				log.log( Level.FINE , "Addon: check matching for " + keyword );
 				
-				if( subject.contains( keyword ) || content.substring( 0 , FIRST_CHARS_TO_CHECK ).contains( keyword ) ) {
+				if( subject.contains( keyword ) || 
+						( ( ( content.length() > numOfChars ) ? 
+								content.substring( 0 ,  numOfChars ).contains( keyword ) : 
+								content.contains( keyword ) ) ) ) {
 					
 					String sender = MailUtils.fetchSenderFromInnerMessage( message );
 					

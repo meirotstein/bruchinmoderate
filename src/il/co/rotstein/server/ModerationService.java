@@ -13,6 +13,8 @@ import il.co.rotstein.server.queue.OlderThenSatisfier;
 import il.co.rotstein.server.queue.SenderSatisfier;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Properties;
@@ -115,7 +117,7 @@ public class ModerationService extends HttpServlet {
 					}
 
 					//check for do-not-moderate char - if presents - free immediately
-					if( subject != null && subject.startsWith( DO_NOT_MODERATE_KEY )) {
+					if( subject != null && subject.trim().startsWith( DO_NOT_MODERATE_KEY )) {
 
 						MailHandler.replyblank( message , MODERATE_TARGET );
 						log.info( "Message was redirected immediately as per sender request: "  + sender );
@@ -126,7 +128,7 @@ public class ModerationService extends HttpServlet {
 				} catch ( MailOperationException moe ) {
 					
 					log.warning( "Fail to extract detail from inner message - skipping the pre moderation parts " + moe.getMessage() );
-					notifyAdminForError( moe );
+					notifyAdminForError( "Pre moderation was skipped " , moe );
 					
 				}
 
@@ -139,10 +141,19 @@ public class ModerationService extends HttpServlet {
 					
 					log.log( Level.FINE , "Executing addon " + inAddOn.getClass().getName() );
 					
-					AddOnResult result = inAddOn.manipulate( message );
-
-					if( result == AddOnResult.Abort ){
-						return;
+					try {
+						
+						AddOnResult result = inAddOn.manipulate( message );
+	
+						if( result == AddOnResult.Abort ){
+							return;
+						}
+					
+					} catch ( Throwable t ) {
+						
+						log.log( Level.WARNING , "Error while add on execution" ,  t );
+						notifyAdminForError( "Error while add on execution" , t );
+						
 					}
 
 				}
@@ -207,7 +218,7 @@ public class ModerationService extends HttpServlet {
 		} catch ( Exception e ) {
 
 			log.log( Level.SEVERE , e.getMessage() , e );			
-			notifyAdminForError( e );
+			notifyAdminForError( "Fatal Exception" , e );
 
 		}
 	}
@@ -246,8 +257,12 @@ public class ModerationService extends HttpServlet {
 
 	}
 
-	private void notifyAdminForError( Exception e ) {
-
+	private void notifyAdminForError( String message , Throwable t ) {
+		
+		StringWriter sw = new StringWriter();
+		PrintWriter pw = new PrintWriter(sw);
+		t.printStackTrace(pw);
+		
 		try {
 
 			MailHandler.send( 	SUPER_ADMIN , 
@@ -255,8 +270,8 @@ public class ModerationService extends HttpServlet {
 					null,
 					DO_NOT_REPLY, 
 					DO_NOT_REPLY, 
-					"Error in Shit! system",
-					e.getStackTrace().toString(),
+					"Error in Shit! system: " + message,
+					sw.toString(),
 					"UTF-8" );
 
 		} catch ( Exception killYourself ) {
