@@ -111,6 +111,10 @@ public class Configurations {
 		return addOnConfigurations;
 		
 	}
+	
+	public static String getPersistencyServiceClassName() {
+		return config.persistency_service_class;
+	}
 
 
 	private static class JsonConfig {
@@ -122,6 +126,7 @@ public class Configurations {
 		private String mail_host = "mybruchin.appspotmail.com";
 		private String do_not_moderate_key = "@";
 		private AddOnConfiguration[] addons;
+		private String persistency_service_class = "il.co.rotstein.server.persistency.gae.GAEPersistencyServiceImpl";
 
 	}
 	

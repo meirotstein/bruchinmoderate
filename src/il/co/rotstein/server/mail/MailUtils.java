@@ -109,6 +109,39 @@ public class MailUtils {
 		return null;
 
 	}
+	
+	private static String fetchPattern( Message message , Pattern pattern ) {
+
+		String result = null;	
+
+		try {
+
+			String body = contentToString( message );
+
+			log.log( Level.FINE , "Body is " + body );
+
+			if( body != null && body != "" ){
+
+				Matcher m = pattern.matcher( body );
+
+				if( m.find() ) {
+
+					result = body.substring( m.start(), m.end() );
+
+					return MimeUtility.decodeText( result );
+
+				}
+			}
+
+		} catch (IOException e) {
+			log.log( Level.FINE , "Error parsing message" ,e );
+		} catch (MessagingException e) {
+			log.log( Level.FINE , "Error parsing message" ,e );
+		}
+
+		return null;
+
+	}
 
 	/**
 	 * Returns text section between two matches
@@ -226,7 +259,8 @@ public class MailUtils {
 
 	public static String fetchSenderFromInnerMessage( Message message ) throws MailOperationException {
 
-		String from = fetchLineByPattern( message , Pattern.compile( "(From:)(.*)(.+@.+\\.[a-z]+)" ) );
+		//		String from = fetchLineByPattern( message , Pattern.compile( "(From:)(.*)(.+@.+\\.[a-z]+)" ) );
+		String from = fetchPattern( message , Pattern.compile( "(From:)(.*?\r?\n?.*?)(<.+@.+\\.[a-z]+>)" ) );
 		
 		if( from == null ) {
 			//fallback from particulary long 'From' sections ( typical for Walla.com emails )

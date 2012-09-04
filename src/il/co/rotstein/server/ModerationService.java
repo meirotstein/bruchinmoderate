@@ -60,14 +60,14 @@ public class ModerationService extends HttpServlet {
 		super.init( config );
 
 		log.log( Level.FINE , "Service gets up, queue size: " + mQueue.size() );
+		
+		//extract configurations
+		Configurations.load( config.getServletContext() );
 
 		Properties props = new Properties(); 
 		session = Session.getDefaultInstance( props, null );
 		MailHandler.init( session );
 		mQueue.init( session );
-
-		//extract configurations
-		Configurations.load( config.getServletContext() );
 
 		MODERATOR_SENDER = MODERATOR_SENDER.replace( "{0}", Configurations.getGroupName() );
 		SUPER_ADMIN = Configurations.getSuperAdmin();
