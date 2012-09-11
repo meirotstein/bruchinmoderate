@@ -97,7 +97,6 @@ public class ModerationService extends HttpServlet {
 
 				try {
 
-					String subject = MailUtils.fetchSubjectFromInnerMessage( message );
 					String realSender = MailUtils.fetchSenderFromInnerMessage( message );
 
 					//check for manual moderation
@@ -115,12 +114,14 @@ public class ModerationService extends HttpServlet {
 						return;
 
 					}
+					
+					String subject = MailUtils.fetchSubjectFromInnerMessage( message );
 
 					//check for do-not-moderate char - if presents - free immediately
 					if( subject != null && subject.trim().startsWith( DO_NOT_MODERATE_KEY )) {
 
 						MailHandler.replyblank( message , MODERATE_TARGET );
-						log.info( "Message was redirected immediately as per sender request: "  + sender );
+						log.info( "Message was redirected immediately as per sender request: "  + realSender );
 						return;
 						
 					}
@@ -149,7 +150,7 @@ public class ModerationService extends HttpServlet {
 							return;
 						}
 					
-					} catch ( Throwable t ) {
+					} catch ( Throwable t ) { //add on execution must not interrupt the main flow 
 						
 						log.log( Level.WARNING , "Error while add on execution" ,  t );
 						notifyAdminForError( "Error while add on execution" , t );
@@ -178,8 +179,14 @@ public class ModerationService extends HttpServlet {
 						
 						for( Message msg : msgs ) {
 							
-							sb.append( MailUtils.fetchSubjectFromInnerMessage( msg ) );
-							sb.append( "\n" );
+							try {
+							
+								sb.append( MailUtils.fetchSubjectFromInnerMessage( msg ) );
+								sb.append( "\n" );
+							
+							} catch ( MailOperationException  moe ) {
+								//ignore
+							}
 							
 						}
 

@@ -12,6 +12,7 @@ import java.io.Reader;
 import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
 import java.io.Writer;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
@@ -309,15 +310,40 @@ public class MailUtils {
 	public static String fetchSubjectFromInnerMessage( Message message ) throws MailOperationException {
 
 //		String subject = fetchLineByPattern( message , Pattern.compile( "(Subject:)(.*)" ) );
-		String subject = fetchSectionFromContent(message, Pattern.compile( "(\nSubject:)" ), Pattern.compile( "(\n(.*):)" ) );
+		String subject = fetchSectionFromContent( message, Pattern.compile( "(\nSubject:)" ), Pattern.compile( "(\n(.*):)" ) );
 		
 		if( subject != null ){
 			
 			log.log( Level.FINE , "Fetched subject: " + subject );
 			
+			String[] lines = subject.trim().substring( 8 ).split( "\n" );
+			ArrayList<String> parts = new ArrayList<String>();
+			int currLine = 0;
+			
+			for ( String line : lines ) {
+				
+				if( parts.size() == currLine )
+					parts.add( currLine , "" );
+				
+				String currStr = parts.get( currLine );
+				currStr += line.replaceAll( "=3D", "=").replaceAll( "\r" , "" ).replaceAll( " ", "" ).replaceAll( "\t", "" );
+				parts.set( currLine , currStr );
+				
+				if( currStr.endsWith( "?=" ) ){
+					++currLine;
+				}
+				
+			}
+			
 			try {
 				
-				return MimeUtility.decodeText( subject.trim().substring( 8 ) );
+				StringBuffer fullSubject = new StringBuffer();
+				
+				for ( String part : parts ) {
+					fullSubject.append( MimeUtility.decodeText( part ) );
+				}
+				
+				return fullSubject.toString();
 				
 			} catch (UnsupportedEncodingException e) {
 				
