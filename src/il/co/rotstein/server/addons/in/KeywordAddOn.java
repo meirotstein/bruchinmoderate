@@ -53,6 +53,10 @@ public class KeywordAddOn extends InAddOn {
 
 				log.log( Level.WARNING , "Fail to fetch content for message - considering empty content " , e );
 
+			} catch (UnsupportedEncodingException e) {
+
+				log.log( Level.WARNING , "Fail to fetch content for message - considering empty content " , e );
+
 			}
 			
 			if( ( content == null && subject == null ) || ( "".equals( content ) && "".equals( subject ) ) ) {
@@ -111,11 +115,7 @@ public class KeywordAddOn extends InAddOn {
 
 			}
 
-		} catch (UnsupportedEncodingException e) {
-
-			log.log( Level.WARNING , "Fail to fetch details from message - add on operation aborted" , e );
-
-		} catch (MailOperationException e) {
+		}  catch (MailOperationException e) {
 
 			log.log( Level.WARNING , "Fail to fetch details from message - add on operation aborted" , e );
 

@@ -37,7 +37,7 @@ public class MailUtils {
 	 * @return
 	 * @throws IOException
 	 */
-	private static String streamToString( InputStream is , long limit ) throws IOException {
+	public static String streamToString( InputStream is , long limit ) throws IOException {
 
 		if (is != null) {
 
@@ -261,7 +261,7 @@ public class MailUtils {
 	public static String fetchSenderFromInnerMessage( Message message ) throws MailOperationException {
 
 		//		String from = fetchLineByPattern( message , Pattern.compile( "(From:)(.*)(.+@.+\\.[a-z]+)" ) );
-		String from = fetchPattern( message , Pattern.compile( "(From:)(.*?\r?\n?.*?)(<.+@.+\\.[a-z]+>)" ) );
+		String from = fetchPattern( message , Pattern.compile( "(From:)(.*?\r?\n?.*?)(<?.+@.+\\.[a-z]+>?)" ) );
 		
 		if( from == null ) {
 			//fallback from particulary long 'From' sections ( typical for Walla.com emails )
@@ -270,14 +270,23 @@ public class MailUtils {
 		}
 
 		if( from != null ){
-
+			
 			int emailStart = from.lastIndexOf("<");
 			int emailEnd = from.lastIndexOf(">");
-
+			//email is in the form of: From: Name <foo@email.com>
 			if( emailStart != -1 && ( emailEnd == -1 || emailEnd > emailStart ) ){
 				String email = ( emailEnd == -1 ) ? from.substring( emailStart + 1 ) : from.substring( emailStart + 1 , emailEnd );
 				log.log( Level.FINE , "'From' str is " + email );
 				return email;
+				
+			} else {
+				//email is in the form of: From: foo@email.com
+				Pattern emailPtrn = Pattern.compile( ".+@.+\\.[a-z]+" );
+				
+				if( emailPtrn.matcher( from.substring( 5 ).trim() ).matches() ) {
+					String email = from.substring( 5 ).trim();
+					return email;
+				}
 			}
 		}
 
@@ -392,9 +401,19 @@ public class MailUtils {
 			if( charsetM.find() ) {
 				charset = actualContent.substring( charsetM.start() + 8 , charsetM.end() ).replace( "\"", "" ).trim();
 				
+				if( charset.contains( "3D" ) ){
+					charset = charset.replace( "3D", "" );
+					actualContent = actualContent.replaceAll( "3D" , "" );
+				}
+				
 				//hack for utf-8 variants
 				if( charset != null && !charset.toLowerCase().equals( "utf-8" ) && charset.toLowerCase().contains( "utf-8" ) ) {
 					charset = "utf-8";
+				}
+				
+				//hack for windows-1255 variants
+				if( charset != null && !charset.toLowerCase().equals( "windows-1255" ) && charset.toLowerCase().contains( "windows-1255" ) ) {
+					charset = "windows-1255";
 				}
 				
 			} else {
