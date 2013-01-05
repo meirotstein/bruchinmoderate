@@ -1,0 +1,189 @@
+--0016e6d59d8e05f04704c90586b6 
+Content-Type: multipart/alternative; boundary="=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6" 
+ 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6 
+Content-Type: text/plain; charset=UTF-8 
+Content-Disposition: inline 
+Content-Transfer-Encoding: base64 
+ 
+Cteg16nXnNeX15Qg15TXldeT16LXlCDXnNen15HXldem15Qg15HXqNeV15vXmdefINeV15TXmdeQ 
+INee157XqteZ16DXlCDXnNeQ15nXqdeV16guINem15nXqNek16DXlSDXkNeqINeU15TXldeT16LX 
+lCDXm9eT15kg16nXqteV15vXnCDXnNei15nXmdefINeR15QuCgrXlNeU15XXk9ei15Qg15PXldeo 
+16nXqiDXqteZ15XXldeaINee15vXmdeV15XXnyDXqdeQ15nXnyDXnNee16nXqtee16kg15TXqNep 
+15DXlCDXnNek16jXodedINek16jXmdeY15nXnS4KCteg15nXqtefINec15DXqdeoINeQ15Ug15zX 
+k9eX15XXqiDXkNeqINeU15TXldeT16LXlCDXkdeQ15XXpNefINee16fXldeV158g15HXm9eq15XX 
+kdeqOiAKaHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL2dyb3VwL2JydWNoaW4vcGVuZG1zZz9obD1p 
+dyAKCteQ15UgCgrXoNeZ16rXnyDXnNeQ16nXqCDXkNeqINeU15TXldeT16LXlCDXkdeQ157Xptei 
+15XXqiDXntei16DXlCDXnNeU15XXk9ei16og15PXldeQItecINeW15UuCg== 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6 
+Content-Type: text/html; charset=UTF-8 
+Content-Disposition: inline 
+Content-Transfer-Encoding: base64 
+ 
+PGh0bWw+CiAgPGhlYWQ+PC9oZWFkPgogIDxib2R5PgoKICAKPHRhYmxlIGlkPSJncm91cHMtbWFp 
+bi1jb250ZW50IiBzdHlsZT0icG9zaXRpb246Y2VudGVyO21hcmdpbjowIDI1cHggMCAyNXB4OyBh 
+dXRvO2ZvbnQtZmFtaWx5OmFyaWFsLHNhbnMtc2VyaWYiIGNlbGxwYWRkaW5nPTAgY2VsbHNwYWNp 
+bmc9MD4KCgogICAgPHA+CiAgICAKICAgINeg16nXnNeX15Qg15TXldeT16LXlCDXnNen15HXldem 
+15QgCiAgCiAgICA8YSBzdHlsZT1jb2xvcjoxNWM7dGV4dC1kZWNvcmF0aW9uOm5vbmUgaHJlZj0i 
+aHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL2dyb3VwL2JydWNoaW4/aGw9aXciPmJydWNoaW48L2E+ 
+CiAgCiDXldeU15nXkCDXntee16rXmdeg15Qg15zXkNeZ16nXldeoLiDXpteZ16jXpNeg15Ug15TX 
+ldeT16LXlCDXlteVINeb15PXmSDXqdeq15XXm9ecINec16LXmdeZ158g15HXlC48L3A+CgogICA8 
+cD4KICAg15TXlNeV15PXoteUINeT15XXqNep16og16rXmdeV15XXmiDXnteb15nXldeV158g16nX 
+kNeZ158g15zXntep16rXntepINeU16jXqdeQ15Qg15zXpNeo16HXnSDXpNeo15nXmNeZ150uPC9w 
+PgoKICAgIDxwPteq15XXm9ecIDxhIHN0eWxlPWNvbG9yOjE1Yzt0ZXh0LWRlY29yYXRpb246bm9u 
+ZSBocmVmPSJodHRwOi8vZ3JvdXBzLmdvb2dsZS5jb20vZ3JvdXAvYnJ1Y2hpbi9wZW5kbXNnP2hs 
+PWl3Ij7XnNeQ16nXqCDXkNeVINec15PXl9eV16o8L2E+INeU15XXk9ei15Qg15bXlSDXkNeVINep 
+16rXldeb15wg15zXkNep16gg15TXldeT16LXlCDXlteVINei15wg15nXk9eZINee16LXoNeUINec 
+15PXldeQItecINeW15QuPC9wPgoKICAKICA8ZGl2IHN0eWxlPSJtYXJnaW46MzBweCAyNXB4IDIw 
+cHggMjRweDsiPgogICA8YSBpZD0iZ3JvdXBzLWxvZ28iIHN0eWxlPSJmbG9hdDpsZWZ0OyBwYWRk 
+aW5nLXJpZ2h0OjIwcHg7IiBocmVmPSIiPgogICAgICAgPGltZyAgaGVpZ2h0PTI1cHggc3JjPSJo 
+dHRwczovL3d3dy5nb29nbGUuY29tL2ludGwvaXcvaW1hZ2VzL2xvZ29zL2dyb3Vwc19sb2dvLnBu 
+ZyIgYWx0PSLXkden16gg15EmIzM5O9en15HXldem15XXqiBHb29nbGUmIzM5OyIgLz4KICAgPC9h 
+PgogICA8cCBpZD0iZ3JvdXBzLWZvb3Rlci10ZXh0IiBzdHlsZT0icGFkZGluZy10b3A6NHB4OyBm 
+b250LWZhbWlseTphcmlhbCxzYW5zLXNlcmlmO2NvbG9yOiM2MzYzNjM7IGZvbnQtc2l6ZToxMXB4 
+Ij4KICAgICAgPGEgc3R5bGU9Y29sb3I6MTVjO3RleHQtZGVjb3JhdGlvbjpub25lIGhyZWY9Imh0 
+dHBzOi8vZ3JvdXBzLmdvb2dsZS5jb20vZ3JvdXBzL2NyZWF0ZT9obD1pdyZzcmM9ZW1haWwiPteU 
+16rXl9ecPC9hPiDXp9eR15XXpteUINee16nXnNeaLCA8YSBzdHlsZT1jb2xvcjoxNWM7dGV4dC1k 
+ZWNvcmF0aW9uOm5vbmUgaHJlZj0iaHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL3N1cHBvcnQvP2hs 
+PWl3JnNyYz1lbWFpbCI+15HXp9eoPC9hPiDXkdee16jXm9eWINeU16LXlteo15QsINeQ15UgPGEg 
+c3R5bGU9Y29sb3I6MTVjO3RleHQtZGVjb3JhdGlvbjpub25lIGhyZWY9Imh0dHBzOi8vZ3JvdXBz 
+Lmdvb2dsZS5jb20vZ3JvdXBzL2FidXNlP2hsPWl3JnNyYz1lbWFpbCI+15PXldeV15cg16LXnDwv 
+YT4g16DXmdem15XXnCDXnNeo16LXlC4gCiAgIDwvcD4KPC9kaXY+CgogIDwvYm9keT4KPC9odG1s 
+Pgo= 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6-- 
+--0016e6d59d8e05f04704c90586b6 
+Content-Type: message/rfc822; charset=ISO-8859-1 
+Content-Disposition: inline 
+ 
+Received: by 10.180.82.166 with SMTP id j6mr367507wiy.1.1346925467184; 
+        Thu, 06 Sep 2012 02:57:47 -0700 (PDT) 
+Received: by 10.180.82.166 with SMTP id j6mr367506wiy.1.1346925467168; 
+        Thu, 06 Sep 2012 02:57:47 -0700 (PDT) 
+Return-Path: <Ofer@elbe.co.il> 
+Received: from esafe.elbe.co.il (legacy.elbe.co.il. [212.143.92.181]) 
+        by gmr-mx.google.com with ESMTPS id hm1si393856wib.3.2012.09.06.02.57.46 
+        (version=TLSv1/SSLv3 cipher=OTHER); 
+        Thu, 06 Sep 2012 02:57:47 -0700 (PDT) 
+Received-SPF: pass (google.com: best guess record for domain of Ofer@elbe.co.il designates 212.143.92.181 as permitted sender) client-ip=212.143.92.181; 
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: best guess record for domain of Ofer@elbe.co.il designates 212.143.92.181 as permitted sender) smtp.mail=Ofer@elbe.co.il 
+Received: from EXCH.Elbe.local ([192.168.100.211]) by EXCH.Elbe.local 
+ ([192.168.100.211]) with mapi id 14.01.0355.002; Thu, 6 Sep 2012 12:51:57 
+ +0300 
+From: Weiss Ofer <Ofer@elbe.co.il> 
+To: "shimon.Muskat@gmail.com" <shimon.Muskat@gmail.com>, Bruchin 
+	<bruchin@googlegroups.com> 
+Subject: =?utf-8?B?UkU6IEDXkdeq15nXnSDXnNep15HXqg==?= 
+Thread-Topic: =?utf-8?B?QNeR16rXmdedINec16nXkdeq?= 
+Thread-Index: AQHNjBFfSvjc7w/eY0a5R2jX/w44R5d9Ei7w 
+Date: Thu, 6 Sep 2012 09:51:56 +0000 
+Message-ID: <6ACB1D8C38E4104CA6F12C5BCB9D4803016FB9@EXCH.Elbe.local> 
+References: <CADis7ZKMheL-omz_fTi74pXtYcS0hMgg973i_2yD4OcqNzj0oA@mail.gmail.com> 
+In-Reply-To: <CADis7ZKMheL-omz_fTi74pXtYcS0hMgg973i_2yD4OcqNzj0oA@mail.gmail.com> 
+Accept-Language: he-IL, en-US 
+Content-Language: en-US 
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [192.168.100.56] 
+Content-Type: multipart/alternative; 
+	boundary="_000_6ACB1D8C38E4104CA6F12C5BCB9D4803016FB9EXCHElbelocal_" 
+MIME-Version: 1.0 
+ 
+--_000_6ACB1D8C38E4104CA6F12C5BCB9D4803016FB9EXCHElbelocal_ 
+Content-Type: text/plain; charset="utf-8" 
+Content-Transfer-Encoding: base64 
+ 
+15vXkNeZ15zXlSwg15QgNS04INeT16fXldeqINebItebINee16nXoNeV16og16TXlCDXqdeT15fX 
+pNeqINeQ16og15TXqdeY16jXldeT15w/ICDXl9eX15fXlw0KDQpfX19fX19fX19fX19fX19fX19f 
+X19fX19fX19fX19fXw0KRnJvbTogYnJ1Y2hpbkBnb29nbGVncm91cHMuY29tIFttYWlsdG86YnJ1 
+Y2hpbkBnb29nbGVncm91cHMuY29tXSBPbiBCZWhhbGYgT2YgU2hpbW9uIE11c2thdA0KU2VudDog 
+VGh1cnNkYXksIFNlcHRlbWJlciAwNiwgMjAxMiAxMjozMCBQTQ0KVG86IEJydWNoaW4NClN1Ympl 
+Y3Q6IEDXkdeq15nXnSDXnNep15HXqg0KDQrXqdec15XXnSDXnNeb15XXnNedLA0KICAg15DXoNeX 
+16DXlSDXoteT15nXmdefINem16jXmdeb15nXnSDXnNep15HXqiDXlNen16jXldeR15Qg16LXldeT 
+INeR15nXqi/Xp9eo15DXldeV158g15DXl9eTLCAo15vXoNeo15DXlCDXnNeW15XXkiDXnteR15XX 
+kteo15nXnSkuINeg16nXnteXINec15PXoteqINeQ150g15nXqSDXntep16TXl9eUINeQ16nXqCDX 
+nteV15vXoNeUINec15TXqdeQ15nXnCDXnNeg15Ug15DXqiDXkdeZ16rXlC/Xp9eo15DXldeV16DX 
+lC4NCg0K16rXldeT15Qg16jXkdeUIQ0KDQrXnteV16nXp9eQ15gNCg0KLS0NCtec15Ag16jXnNeV 
+15XXoNeY15k6DQpodHRwOi8vd3d3LmluZm8ub3JnLmlsL2lycmVsZXZhbnQvDQotLS0NCtep15nX 
+mCEg15HXqdec15XXqSDXqdeV16jXldeqOg0K15zXntep15nXm9eqINee15nXmdecINep16DXqdec 
+15cg15nXqSDXnNep15zXldeXINee15nXmdecINeo15nXpyDXnDoNCnJlbW92ZUBteWJydWNoaW4u 
+YXBwc3BvdG1haWwuY29tDQrXnNep15zXmdeX16og15TXldeT16LXlCDXnteZ15nXk9eZ16og15nX 
+qSDXnNeU15XXodeZ16MgQCDXnNeq15fXmdec16og16nXldeo16og15TXoNeV16nXkA0KLS0tDQrX 
+p9eZ15HXnNeqINeU15XXk9ei15Qg15bXlSDXnteb15nXldeV158g16nXkNeq15Qg157XoNeV15kg 
+15zXp9eR15XXpteUICfXkdeo15XXm9eZ158nINeR16fXkdeV16bXldeqIEdvb2dsZS4NCteb15PX 
+mSDXnNek16jXodedINeU15XXk9ei15XXqiDXkden15HXldem15Qg15bXlSwg16nXnNeXINeT15XX 
+kCLXnCDXnC1icnVjaGluQGdvb2dsZWdyb3Vwcy5jb20uDQoNCg0K 
+ 
+--_000_6ACB1D8C38E4104CA6F12C5BCB9D4803016FB9EXCHElbelocal_ 
+Content-Type: text/html; charset="utf-8" 
+Content-Transfer-Encoding: base64 
+ 
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv 
+L0VOIj4NCjxodG1sPg0KPGhlYWQ+DQo8bWV0YSBodHRwLWVxdWl2PSJDb250ZW50LVR5cGUiIGNv 
+bnRlbnQ9InRleHQvaHRtbDsgY2hhcnNldD11dGYtOCI+DQo8bWV0YSBuYW1lPSJHRU5FUkFUT1Ii 
+IGNvbnRlbnQ9Ik1TSFRNTCA4LjAwLjc2MDEuMTc2NTUiPg0KPC9oZWFkPg0KPGJvZHk+DQo8ZGl2 
+IGRpcj0icnRsIiBhbGlnbj0icmlnaHQiPjxzcGFuIGNsYXNzPSI4ODcxNjUxMDktMDYwOTIwMTIi 
+Pjxmb250IHNpemU9IjIiIGZhY2U9IkFyaWFsIj7Xm9eQ15nXnNeVLCDXlCA1LTgg15PXp9eV16og 
+15smcXVvdDvXmyDXntep16DXldeqINek15Qg16nXk9eX16TXqiDXkNeqINeU16nXmNeo15XXk9ec 
+Pw0KPC9mb250Pjwvc3Bhbj48c3BhbiBjbGFzcz0iODg3MTY1MTA5LTA2MDkyMDEyIj48Zm9udCBz 
+aXplPSIyIiBmYWNlPSJBcmlhbCI+Jm5ic3A715fXl9eX15c8L2ZvbnQ+PC9zcGFuPjwvZGl2Pg0K 
+PGJyPg0KPGRpdiBkaXI9InJ0bCIgbGFuZz0iZW4tdXMiIGNsYXNzPSJPdXRsb29rTWVzc2FnZUhl 
+YWRlciIgYWxpZ249InJpZ2h0Ij4NCjxociB0YWJpbmRleD0iLTEiPg0KPGZvbnQgc2l6ZT0iMiIg 
+ZmFjZT0iVGFob21hIj48Yj5Gcm9tOjwvYj4gYnJ1Y2hpbkBnb29nbGVncm91cHMuY29tIFttYWls 
+dG86YnJ1Y2hpbkBnb29nbGVncm91cHMuY29tXQ0KPGI+T24gQmVoYWxmIE9mIDwvYj5TaGltb24g 
+TXVza2F0PGJyPg0KPGI+U2VudDo8L2I+IFRodXJzZGF5LCBTZXB0ZW1iZXIgMDYsIDIwMTIgMTI6 
+MzAgUE08YnI+DQo8Yj5Ubzo8L2I+IEJydWNoaW48YnI+DQo8Yj5TdWJqZWN0OjwvYj4gQNeR16rX 
+mdedINec16nXkdeqPGJyPg0KPC9mb250Pjxicj4NCjwvZGl2Pg0KPGRpdj48L2Rpdj4NCjxkaXYg 
+ZGlyPSJsdHIiPg0KPGRpdiBkaXI9InJ0bCI+16nXnNeV150g15zXm9eV15zXnSw8L2Rpdj4NCjxk 
+aXYgZGlyPSJydGwiPiZuYnNwOyAmbmJzcDvXkNeg15fXoNeVINei15PXmdeZ158g16bXqNeZ15vX 
+mdedINec16nXkdeqINeU16fXqNeV15HXlCDXoteV15Mg15HXmdeqL9en16jXkNeV15XXnyDXkNeX 
+15MsICjXm9eg16jXkNeUINec15bXldeSINee15HXldeS16jXmdedKS4g16DXqdee15cg15zXk9ei 
+16og15DXnSDXmdepINee16nXpNeX15Qg15DXqdeoINee15XXm9eg15Qg15zXlNep15DXmdecINec 
+16DXlSDXkNeqINeR15nXqteUL9en16jXkNeV15XXoNeULjwvZGl2Pg0KPGRpdiBkaXI9InJ0bCI+ 
+PGJyPg0KPC9kaXY+DQo8ZGl2IGRpcj0icnRsIj7XqteV15PXlCDXqNeR15QhPC9kaXY+DQo8ZGl2 
+IGRpcj0icnRsIj48YnI+DQo8L2Rpdj4NCjxkaXYgZGlyPSJydGwiPtee15XXqden15DXmDwvZGl2 
+Pg0KPC9kaXY+DQo8cD48L3A+DQotLSA8YnI+DQrXnNeQINeo15zXldeV16DXmNeZOjxicj4NCjxh 
+IGhyZWY9Imh0dHA6Ly93d3cuaW5mby5vcmcuaWwvaXJyZWxldmFudC8iPmh0dHA6Ly93d3cuaW5m 
+by5vcmcuaWwvaXJyZWxldmFudC88L2E+PGJyPg0KLS0tPGJyPg0K16nXmdeYISDXkdep15zXldep 
+INep15XXqNeV16o6PGJyPg0K15zXntep15nXm9eqINee15nXmdecINep16DXqdec15cg15nXqSDX 
+nNep15zXldeXINee15nXmdecINeo15nXpyDXnDo8YnI+DQpyZW1vdmVAbXlicnVjaGluLmFwcHNw 
+b3RtYWlsLmNvbTxicj4NCtec16nXnNeZ15fXqiDXlNeV15PXoteUINee15nXmdeT15nXqiDXmdep 
+INec15TXldeh15nXoyBAINec16rXl9eZ15zXqiDXqdeV16jXqiDXlNeg15XXqdeQPGJyPg0KLS0t 
+IDxicj4NCten15nXkdec16og15TXldeT16LXlCDXlteVINee15vXmdeV15XXnyDXqdeQ16rXlCDX 
+nteg15XXmSDXnNen15HXldem15QgJ9eR16jXldeb15nXnycg15HXp9eR15XXpteV16ogR29vZ2xl 
+Ljxicj4NCteb15PXmSDXnNek16jXodedINeU15XXk9ei15XXqiDXkden15HXldem15Qg15bXlSwg 
+16nXnNeXINeT15XXkCZxdW90O9ecINecLWJydWNoaW5AZ29vZ2xlZ3JvdXBzLmNvbS48YnI+DQom 
+bmJzcDs8YnI+DQombmJzcDs8YnI+DQo8L2JvZHk+DQo8L2h0bWw+DQo= 
+ 
+--_000_6ACB1D8C38E4104CA6F12C5BCB9D4803016FB9EXCHElbelocal_-- 
+ 
+--0016e6d59d8e05f04704c90586b6-- 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>RESULTS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Sender:Ofer@elbe.co.il
+Subject:RE: @בתים לשבת 
+Content:כאילו, ה 5-8 דקות כ"כ משנות פה שדחפת את השטרודל?  חחחח
+
+________________________________
+From: bruchin@googlegroups.com [mailto:bruchin@googlegroups.com] On Behalf Of Shimon Muskat
+Sent: Thursday, September 06, 2012 12:30 PM
+To: Bruchin
+Subject: @בתים לשבת
+
+שלום לכולם,
+   אנחנו עדיין צריכים לשבת הקרובה עוד בית/קראוון אחד, (כנראה לזוג מבוגרים). נשמח לדעת אם יש משפחה אשר מוכנה להשאיל לנו את ביתה/קראוונה.
+
+תודה רבה!
+
+מושקאט
+
+--
+לא רלוונטי:
+http://www.info.org.il/irrelevant/
+---
+שיט! בשלוש שורות:
+למשיכת מייל שנשלח יש לשלוח מייל ריק ל:
+remove@mybruchin.appspotmail.com
+לשליחת הודעה מיידית יש להוסיף @ לתחילת שורת הנושא
+---
+קיבלת הודעה זו מכיוון שאתה מנוי לקבוצה 'ברוכין' בקבוצות Google.
+כדי לפרסם הודעות בקבוצה זו, שלח דוא"ל ל-bruchin@googlegroups.com.
+

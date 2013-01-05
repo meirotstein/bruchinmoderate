@@ -115,6 +115,10 @@ public class Configurations {
 	public static String getPersistencyServiceClassName() {
 		return config.persistency_service_class;
 	}
+	
+	public static String getStatisticsServiceClassName() {
+		return config.statistics_service_class;
+	}
 
 
 	private static class JsonConfig {
@@ -127,6 +131,7 @@ public class Configurations {
 		private String do_not_moderate_key = "@";
 		private AddOnConfiguration[] addons;
 		private String persistency_service_class = "il.co.rotstein.server.persistency.gae.GAEPersistencyServiceImpl";
+		private String statistics_service_class = "il.co.rotstein.server.statistics.gae.GAEStatisticsServiceImpl";
 
 	}
 	

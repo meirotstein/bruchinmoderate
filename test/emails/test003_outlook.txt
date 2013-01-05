@@ -1,0 +1,240 @@
+--f46d0418283a9f4ff604c941c68e 
+Content-Type: multipart/alternative; boundary="=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6" 
+ 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6 
+Content-Type: text/plain; charset=UTF-8 
+Content-Disposition: inline 
+Content-Transfer-Encoding: base64 
+ 
+Cteg16nXnNeX15Qg15TXldeT16LXlCDXnNen15HXldem15Qg15HXqNeV15vXmdefINeV15TXmdeQ 
+INee157XqteZ16DXlCDXnNeQ15nXqdeV16guINem15nXqNek16DXlSDXkNeqINeU15TXldeT16LX 
+lCDXm9eT15kg16nXqteV15vXnCDXnNei15nXmdefINeR15QuCgrXlNeU15XXk9ei15Qg15PXldeo 
+16nXqiDXqteZ15XXldeaINee15vXmdeV15XXnyDXqdeQ15nXnyDXnNee16nXqtee16kg15TXqNep 
+15DXlCDXnNek16jXodedINek16jXmdeY15nXnS4KCteg15nXqtefINec15DXqdeoINeQ15Ug15zX 
+k9eX15XXqiDXkNeqINeU15TXldeT16LXlCDXkdeQ15XXpNefINee16fXldeV158g15HXm9eq15XX 
+kdeqOiAKaHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL2dyb3VwL2JydWNoaW4vcGVuZG1zZz9obD1p 
+dyAKCteQ15UgCgrXoNeZ16rXnyDXnNeQ16nXqCDXkNeqINeU15TXldeT16LXlCDXkdeQ157Xptei 
+15XXqiDXntei16DXlCDXnNeU15XXk9ei16og15PXldeQItecINeW15UuCg== 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6 
+Content-Type: text/html; charset=UTF-8 
+Content-Disposition: inline 
+Content-Transfer-Encoding: base64 
+ 
+PGh0bWw+CiAgPGhlYWQ+PC9oZWFkPgogIDxib2R5PgoKICAKPHRhYmxlIGlkPSJncm91cHMtbWFp 
+bi1jb250ZW50IiBzdHlsZT0icG9zaXRpb246Y2VudGVyO21hcmdpbjowIDI1cHggMCAyNXB4OyBh 
+dXRvO2ZvbnQtZmFtaWx5OmFyaWFsLHNhbnMtc2VyaWYiIGNlbGxwYWRkaW5nPTAgY2VsbHNwYWNp 
+bmc9MD4KCgogICAgPHA+CiAgICAKICAgINeg16nXnNeX15Qg15TXldeT16LXlCDXnNen15HXldem 
+15QgCiAgCiAgICA8YSBzdHlsZT1jb2xvcjoxNWM7dGV4dC1kZWNvcmF0aW9uOm5vbmUgaHJlZj0i 
+aHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL2dyb3VwL2JydWNoaW4/aGw9aXciPmJydWNoaW48L2E+ 
+CiAgCiDXldeU15nXkCDXntee16rXmdeg15Qg15zXkNeZ16nXldeoLiDXpteZ16jXpNeg15Ug15TX 
+ldeT16LXlCDXlteVINeb15PXmSDXqdeq15XXm9ecINec16LXmdeZ158g15HXlC48L3A+CgogICA8 
+cD4KICAg15TXlNeV15PXoteUINeT15XXqNep16og16rXmdeV15XXmiDXnteb15nXldeV158g16nX 
+kNeZ158g15zXntep16rXntepINeU16jXqdeQ15Qg15zXpNeo16HXnSDXpNeo15nXmNeZ150uPC9w 
+PgoKICAgIDxwPteq15XXm9ecIDxhIHN0eWxlPWNvbG9yOjE1Yzt0ZXh0LWRlY29yYXRpb246bm9u 
+ZSBocmVmPSJodHRwOi8vZ3JvdXBzLmdvb2dsZS5jb20vZ3JvdXAvYnJ1Y2hpbi9wZW5kbXNnP2hs 
+PWl3Ij7XnNeQ16nXqCDXkNeVINec15PXl9eV16o8L2E+INeU15XXk9ei15Qg15bXlSDXkNeVINep 
+16rXldeb15wg15zXkNep16gg15TXldeT16LXlCDXlteVINei15wg15nXk9eZINee16LXoNeUINec 
+15PXldeQItecINeW15QuPC9wPgoKICAKICA8ZGl2IHN0eWxlPSJtYXJnaW46MzBweCAyNXB4IDIw 
+cHggMjRweDsiPgogICA8YSBpZD0iZ3JvdXBzLWxvZ28iIHN0eWxlPSJmbG9hdDpsZWZ0OyBwYWRk 
+aW5nLXJpZ2h0OjIwcHg7IiBocmVmPSIiPgogICAgICAgPGltZyAgaGVpZ2h0PTI1cHggc3JjPSJo 
+dHRwczovL3d3dy5nb29nbGUuY29tL2ludGwvaXcvaW1hZ2VzL2xvZ29zL2dyb3Vwc19sb2dvLnBu 
+ZyIgYWx0PSLXkden16gg15EmIzM5O9en15HXldem15XXqiBHb29nbGUmIzM5OyIgLz4KICAgPC9h 
+PgogICA8cCBpZD0iZ3JvdXBzLWZvb3Rlci10ZXh0IiBzdHlsZT0icGFkZGluZy10b3A6NHB4OyBm 
+b250LWZhbWlseTphcmlhbCxzYW5zLXNlcmlmO2NvbG9yOiM2MzYzNjM7IGZvbnQtc2l6ZToxMXB4 
+Ij4KICAgICAgPGEgc3R5bGU9Y29sb3I6MTVjO3RleHQtZGVjb3JhdGlvbjpub25lIGhyZWY9Imh0 
+dHBzOi8vZ3JvdXBzLmdvb2dsZS5jb20vZ3JvdXBzL2NyZWF0ZT9obD1pdyZzcmM9ZW1haWwiPteU 
+16rXl9ecPC9hPiDXp9eR15XXpteUINee16nXnNeaLCA8YSBzdHlsZT1jb2xvcjoxNWM7dGV4dC1k 
+ZWNvcmF0aW9uOm5vbmUgaHJlZj0iaHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL3N1cHBvcnQvP2hs 
+PWl3JnNyYz1lbWFpbCI+15HXp9eoPC9hPiDXkdee16jXm9eWINeU16LXlteo15QsINeQ15UgPGEg 
+c3R5bGU9Y29sb3I6MTVjO3RleHQtZGVjb3JhdGlvbjpub25lIGhyZWY9Imh0dHBzOi8vZ3JvdXBz 
+Lmdvb2dsZS5jb20vZ3JvdXBzL2FidXNlP2hsPWl3JnNyYz1lbWFpbCI+15PXldeV15cg16LXnDwv 
+YT4g16DXmdem15XXnCDXnNeo16LXlC4gCiAgIDwvcD4KPC9kaXY+CgogIDwvYm9keT4KPC9odG1s 
+Pgo= 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6-- 
+--f46d0418283a9f4ff604c941c68e 
+Content-Type: message/rfc822; charset=ISO-8859-1 
+Content-Disposition: inline 
+Content-Transfer-Encoding: quoted-printable 
+ 
+Received: by 10.181.11.234 with SMTP id el10mr914222wid.2.1347184248993; 
+        Sun, 09 Sep 2012 02:50:48 -0700 (PDT) 
+Received: by 10.181.11.234 with SMTP id el10mr914221wid.2.1347184248981; 
+        Sun, 09 Sep 2012 02:50:48 -0700 (PDT) 
+Return-Path: <YaelM@dsit.co.il> 
+Received: from dsit.co.il (mail.dsit.co.il. [62.219.244.34]) 
+        by gmr-mx.google.com with ESMTP id fa8si1114352wid.1.2012.09.09.02.= 
+50.48; 
+        Sun, 09 Sep 2012 02:50:48 -0700 (PDT) 
+Received-SPF: pass (google.com: best guess record for domain of YaelM@dsit.= 
+co.il designates 62.219.244.34 as permitted sender) client-ip=3D62.219.244.= 
+34; 
+Authentication-Results: gmr-mx.google.com; spf=3Dpass (google.com: best gue= 
+ss record for domain of YaelM@dsit.co.il designates 62.219.244.34 as permit= 
+ted sender) smtp.mail=3DYaelM@dsit.co.il 
+Received: from Internal Mail-Server by Mail-SeCure (envelope-from 
+	YaelM@dsit.co.il) with SMTP; 9 Sep 2012 12:38:02 +0300 
+Received: from DSITEXCH10.dsi.local ([fe80::d0f1:8fc4:a330:cb46]) by 
+	dsitexch10.dsi.local ([fe80::d0f1:8fc4:a330:cb46%11]) with mapi id 
+	14.01.0218.012; Sun, 9 Sep 2012 12:50:47 +0300 
+From: Yael Malachi <YaelM@dsit.co.il> 
+To: "bruchin@googlegroups.com" <bruchin@googlegroups.com> 
+Subject: =3D?windows-1255?B?6Pju9CDs4ejpIO7k7vLl7yDs9uD6IO7k6en55eEg7Ovp5eX= 
+vIOTu+Ovm?=3D 
+	=3D?windows-1255?Q?_?=3D 
+Thread-Topic: =3D?windows-1255?B?6Pju9CDs4ejpIO7k7vLl7yDs9uD6IO7k6en55eEg7O= 
+vp5eXvIOTu+Ovm?=3D 
+	=3D?windows-1255?Q?_?=3D 
+Thread-Index: Ac2OcIiK63c+pHCpS7OehsEuuQbs+g=3D=3D 
+Date: Sun, 9 Sep 2012 09:50:46 +0000 
+Message-ID: <F0A832C72CC5294D9430C6285A83F93E18E771@dsitexch10.dsi.local> 
+Accept-Language: he-IL, en-US 
+Content-Language: en-US 
+X-MS-Has-Attach:=20 
+X-MS-TNEF-Correlator:=20 
+x-originating-ip: [10.1.4.59] 
+Content-Type: multipart/alternative; 
+	boundary=3D"_000_F0A832C72CC5294D9430C6285A83F93E18E771dsitexch10dsiloca_" 
+MIME-Version: 1.0 
+ 
+--_000_F0A832C72CC5294D9430C6285A83F93E18E771dsitexch10dsiloca_ 
+Content-Type: text/plain; charset=3D"windows-1255" 
+Content-Transfer-Encoding: quoted-printable 
+ 
+=3DE1=3DE8=3DE9 =3DEE=3DE4=3DEE=3DF2=3DE5=3DEF =3DEE=3DE7=3DF4=3DF9=3DFA = 
+=3DE8=3DF8=3DEE=3DF4 =3DE9=3DF6=3DE9=3DE0=3DE4 =3D 
+=3DEE=3DE4=3DE9=3DE9=3DF9=3DE5=3DE1 =3DEC=3DEB=3DE9=3DE5=3DE5=3DEF =3DE4=3D= 
+EE=3DF8=3DEB=3DE6 (=3DF4=3DE0=3DF8=3DF7 =3DF1=3D 
+=3DE9=3DE1=3DEC, =3DF4=3DFA=3DE7 =3DFA=3DF7=3DE5=3DE5=3DE4, =3DE1=3DF0=3DE9= 
+ =3DE1=3DF8=3DF7...) 
+=3DE1=3DF9=3DF2=3DE4 15:50 =3DE1=3DF2=3DF8=3DEA. 
+=3DF0=3DE0 =3DEC=3DE7=3DE6=3DE5=3DF8 =3DE0=3DEC=3DE9=3DE4 =3DEC=3DF4=3DE0= 
+=3DEC=3DF4=3DE5=3DEF 0547559377 
+=3DFA=3DE5=3DE3=3DE4. 
+ 
+---------------------------------------------------------------------------= 
+------ Confidentiality Notice----------------------------------------------= 
+---------------------------------------- 
+The information contained in this communication is proprietary to DSIT Solu= 
+tions Ltd., may contain confidential or privileged information, and is inte= 
+nded only for the use of the addressee(s). If you are not the intended addr= 
+essee, please be aware that any use, disclosure, distribution and/or copyin= 
+g of this communication is strictly prohibited. If you received this commun= 
+ication in error, please notify the sender or info@dsit.co.il  immediately = 
+and delete all copies of the original message. Thank you.=20 
+---------------------------------------------------------------------------= 
+---------------------------------------------------------------------------= 
+------------------------------------------------ 
+ 
+ 
+ 
+--_000_F0A832C72CC5294D9430C6285A83F93E18E771dsitexch10dsiloca_ 
+Content-Type: text/html; charset=3D"windows-1255" 
+Content-Transfer-Encoding: quoted-printable 
+ 
+<html xmlns:v=3D3D"urn:schemas-microsoft-com:vml" xmlns:o=3D3D"urn:schemas-= 
+micr=3D 
+osoft-com:office:office" xmlns:w=3D3D"urn:schemas-microsoft-com:office:word= 
+" =3D 
+xmlns:m=3D3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D3D"h= 
+ttp:=3D 
+//www.w3.org/TR/REC-html40"> 
+<head> 
+<meta http-equiv=3D3D"Content-Type" content=3D3D"text/html; charset=3D3Dwin= 
+dows-1=3D 
+255"> 
+<meta name=3D3D"Generator" content=3D3D"Microsoft Word 14 (filtered medium)= 
+"> 
+<style><!-- 
+/* Font Definitions */ 
+@font-face 
+	{font-family:Calibri; 
+	panose-1:2 15 5 2 2 2 4 3 2 4;} 
+/* Style Definitions */ 
+p.MsoNormal, li.MsoNormal, div.MsoNormal 
+	{margin:0cm; 
+	margin-bottom:.0001pt; 
+	text-align:right; 
+	direction:rtl; 
+	unicode-bidi:embed; 
+	font-size:11.0pt; 
+	font-family:"Calibri","sans-serif";} 
+a:link, span.MsoHyperlink 
+	{mso-style-priority:99; 
+	color:blue; 
+	text-decoration:underline;} 
+a:visited, span.MsoHyperlinkFollowed 
+	{mso-style-priority:99; 
+	color:purple; 
+	text-decoration:underline;} 
+span.EmailStyle17 
+	{mso-style-type:personal-compose; 
+	font-family:"Calibri","sans-serif"; 
+	color:windowtext;} 
+.MsoChpDefault 
+	{mso-style-type:export-only; 
+	font-family:"Calibri","sans-serif";} 
+@page WordSection1 
+	{size:612.0pt 792.0pt; 
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;} 
+div.WordSection1 
+	{page:WordSection1;} 
+--></style><!--[if gte mso 9]><xml> 
+<o:shapedefaults v:ext=3D3D"edit" spidmax=3D3D"1026" /> 
+</xml><![endif]--><!--[if gte mso 9]><xml> 
+<o:shapelayout v:ext=3D3D"edit"> 
+<o:idmap v:ext=3D3D"edit" data=3D3D"1" /> 
+</o:shapelayout></xml><![endif]--> 
+</head> 
+<body lang=3D3D"EN-US" link=3D3D"blue" vlink=3D3D"purple"> 
+<div class=3D3D"WordSection1"> 
+<p class=3D3D"MsoNormal" dir=3D3D"RTL"><span lang=3D3D"HE" style=3D3D"font-= 
+family:&=3D 
+quot;Arial&quot;,&quot;sans-serif&quot;">=3DE1=3DE8=3DE9 =3DEE=3DE4=3DEE=3D= 
+F2=3DE5=3DEF =3DEE=3D 
+=3DE7=3DF4=3DF9=3DFA =3DE8=3DF8=3DEE=3DF4 =3DE9=3DF6=3DE9=3DE0=3DE4 =3DEE= 
+=3DE4=3DE9=3DE9=3DF9=3DE5=3DE1 =3DEC=3DEB=3DE9=3D 
+=3DE5=3DE5=3DEF =3DE4=3DEE=3DF8=3DEB=3DE6 (=3DF4=3DE0=3DF8=3DF7 =3DF1=3DE9= 
+=3DE1=3DEC, =3DF4=3DFA=3DE7 =3DFA=3DF7=3DE5=3D 
+=3DE5=3DE4, =3DE1=3DF0=3DE9 =3DE1=3DF8=3DF7...)<o:p></o:p></span></p> 
+<p class=3D3D"MsoNormal" dir=3D3D"RTL"><span lang=3D3D"HE" style=3D3D"font-= 
+family:&=3D 
+quot;Arial&quot;,&quot;sans-serif&quot;">=3DE1=3DF9=3DF2=3DE4 15:50 =3DE1= 
+=3DF2=3DF8=3DEA.<o=3D 
+:p></o:p></span></p> 
+<p class=3D3D"MsoNormal" dir=3D3D"RTL"><span lang=3D3D"HE" style=3D3D"font-= 
+family:&=3D 
+quot;Arial&quot;,&quot;sans-serif&quot;">=3DF0=3DE0 =3DEC=3DE7=3DE6=3DE5=3D= 
+F8 =3DE0=3DEC=3DE9=3D 
+=3DE4 =3DEC=3DF4=3DE0=3DEC=3DF4=3DE5=3DEF 0547559377<o:p></o:p></span></p> 
+<p class=3D3D"MsoNormal" dir=3D3D"RTL"><span lang=3D3D"HE" style=3D3D"font-= 
+family:&=3D 
+quot;Arial&quot;,&quot;sans-serif&quot;">=3DFA=3DE5=3DE3=3DE4.<o:p></o:p></= 
+span></p=3D 
+> 
+</div> 
+<br><br> 
+---------------------------------------------------------------------------= 
+------ Confidentiality Notice----------------------------------------------= 
+----------------------------------------<br>The information contained in th= 
+is communication is proprietary to DSIT Solutions Ltd., may contain confide= 
+ntial or privileged information, and is intended only for the use of the ad= 
+dressee(s). If you are not the intended addressee, please be aware that any= 
+ use, disclosure, distribution and/or copying of this communication is stri= 
+ctly prohibited. If you received this communication in error, please notify= 
+ the sender or info@dsit.co.il  immediately and delete all copies of the or= 
+iginal message. Thank you. <br>--------------------------------------------= 
+---------------------------------------------------------------------------= 
+---------------------------------------------------------------------------= 
+----<br> 
+</body> 
+</html> 
+ 
+ 
+ 
+--_000_F0A832C72CC5294D9430C6285A83F93E18E771dsitexch10dsiloca_-- 
+ 
+--f46d0418283a9f4ff604c941c68e-- 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>RESULTS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Sender:YaelM@dsit.co.il
+Subject:טרמפ לבטי מהמעון לצאת מהיישוב לכיווְ¼ƒ“»ד¯רכז 
+Content:בטימהמעוןמחפשת8רמפיציאהEהיישובלכיווןהEרכז(פארקס9בל,פתחתקווה,בני1רק...)בשעה15:50בערך.נאלחזוראליהלפאCפון0547559377תודה.

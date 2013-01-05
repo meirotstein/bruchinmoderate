@@ -6,11 +6,14 @@ import java.util.logging.Logger;
 import javax.mail.Message;
 import javax.mail.Message.RecipientType;
 import javax.mail.MessagingException;
+import javax.mail.Multipart;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 
 public class MailHandler {
 
@@ -70,7 +73,8 @@ public class MailHandler {
 						String replyTo, 
 						String subject, 
 						String body, 
-						String encoding ) throws AddressException, MessagingException {
+						String encoding,
+						Boolean isHtml ) throws AddressException, MessagingException {
 		
 		if( session == null ){
 			throw new RuntimeException( MailHandler.class.getName() + " was not initiated" );
@@ -90,8 +94,21 @@ public class MailHandler {
 			msg.setReplyTo( new InternetAddress[] { new InternetAddress( replyTo ) } );
 		if( subject != null && subject !="" )
 			msg.setSubject( subject , encoding );
-		if( body != null && body !="" )
-			msg.setText( body , encoding );
+		if( body != null && body !="" ){
+			if( isHtml ) {
+				
+				final MimeBodyPart htmlPart = new MimeBodyPart();
+				htmlPart.setContent( body , "text/html" );
+				final Multipart mp = new MimeMultipart();
+				mp.addBodyPart( htmlPart );
+				
+				msg.setContent( mp );
+			} else {
+				msg.setText( body , encoding );
+			}
+ 
+		}
+			
 		
 		Transport.send(msg);
 		

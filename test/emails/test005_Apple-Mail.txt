@@ -1,0 +1,123 @@
+--f46d043be2a23ca75e04c88b4356 
+Content-Type: multipart/alternative; boundary="=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6" 
+ 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6 
+Content-Type: text/plain; charset=UTF-8 
+Content-Disposition: inline 
+Content-Transfer-Encoding: base64 
+ 
+Cteg16nXnNeX15Qg15TXldeT16LXlCDXnNen15HXldem15Qg15HXqNeV15vXmdefINeV15TXmdeQ 
+INee157XqteZ16DXlCDXnNeQ15nXqdeV16guINem15nXqNek16DXlSDXkNeqINeU15TXldeT16LX 
+lCDXm9eT15kg16nXqteV15vXnCDXnNei15nXmdefINeR15QuCgrXlNeU15XXk9ei15Qg15PXldeo 
+16nXqiDXqteZ15XXldeaINee15vXmdeV15XXnyDXqdeQ15nXnyDXnNee16nXqtee16kg15TXqNep 
+15DXlCDXnNek16jXodedINek16jXmdeY15nXnS4KCteg15nXqtefINec15DXqdeoINeQ15Ug15zX 
+k9eX15XXqiDXkNeqINeU15TXldeT16LXlCDXkdeQ15XXpNefINee16fXldeV158g15HXm9eq15XX 
+kdeqOiAKaHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL2dyb3VwL2JydWNoaW4vcGVuZG1zZz9obD1p 
+dyAKCteQ15UgCgrXoNeZ16rXnyDXnNeQ16nXqCDXkNeqINeU15TXldeT16LXlCDXkdeQ157Xptei 
+15XXqiDXntei16DXlCDXnNeU15XXk9ei16og15PXldeQItecINeW15UuCg== 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6 
+Content-Type: text/html; charset=UTF-8 
+Content-Disposition: inline 
+Content-Transfer-Encoding: base64 
+ 
+PGh0bWw+CiAgPGhlYWQ+PC9oZWFkPgogIDxib2R5PgoKICAKPHRhYmxlIGlkPSJncm91cHMtbWFp 
+bi1jb250ZW50IiBzdHlsZT0icG9zaXRpb246Y2VudGVyO21hcmdpbjowIDI1cHggMCAyNXB4OyBh 
+dXRvO2ZvbnQtZmFtaWx5OmFyaWFsLHNhbnMtc2VyaWYiIGNlbGxwYWRkaW5nPTAgY2VsbHNwYWNp 
+bmc9MD4KCgogICAgPHA+CiAgICAKICAgINeg16nXnNeX15Qg15TXldeT16LXlCDXnNen15HXldem 
+15QgCiAgCiAgICA8YSBzdHlsZT1jb2xvcjoxNWM7dGV4dC1kZWNvcmF0aW9uOm5vbmUgaHJlZj0i 
+aHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL2dyb3VwL2JydWNoaW4/aGw9aXciPmJydWNoaW48L2E+ 
+CiAgCiDXldeU15nXkCDXntee16rXmdeg15Qg15zXkNeZ16nXldeoLiDXpteZ16jXpNeg15Ug15TX 
+ldeT16LXlCDXlteVINeb15PXmSDXqdeq15XXm9ecINec16LXmdeZ158g15HXlC48L3A+CgogICA8 
+cD4KICAg15TXlNeV15PXoteUINeT15XXqNep16og16rXmdeV15XXmiDXnteb15nXldeV158g16nX 
+kNeZ158g15zXntep16rXntepINeU16jXqdeQ15Qg15zXpNeo16HXnSDXpNeo15nXmNeZ150uPC9w 
+PgoKICAgIDxwPteq15XXm9ecIDxhIHN0eWxlPWNvbG9yOjE1Yzt0ZXh0LWRlY29yYXRpb246bm9u 
+ZSBocmVmPSJodHRwOi8vZ3JvdXBzLmdvb2dsZS5jb20vZ3JvdXAvYnJ1Y2hpbi9wZW5kbXNnP2hs 
+PWl3Ij7XnNeQ16nXqCDXkNeVINec15PXl9eV16o8L2E+INeU15XXk9ei15Qg15bXlSDXkNeVINep 
+16rXldeb15wg15zXkNep16gg15TXldeT16LXlCDXlteVINei15wg15nXk9eZINee16LXoNeUINec 
+15PXldeQItecINeW15QuPC9wPgoKICAKICA8ZGl2IHN0eWxlPSJtYXJnaW46MzBweCAyNXB4IDIw 
+cHggMjRweDsiPgogICA8YSBpZD0iZ3JvdXBzLWxvZ28iIHN0eWxlPSJmbG9hdDpsZWZ0OyBwYWRk 
+aW5nLXJpZ2h0OjIwcHg7IiBocmVmPSIiPgogICAgICAgPGltZyAgaGVpZ2h0PTI1cHggc3JjPSJo 
+dHRwczovL3d3dy5nb29nbGUuY29tL2ludGwvaXcvaW1hZ2VzL2xvZ29zL2dyb3Vwc19sb2dvLnBu 
+ZyIgYWx0PSLXkden16gg15EmIzM5O9en15HXldem15XXqiBHb29nbGUmIzM5OyIgLz4KICAgPC9h 
+PgogICA8cCBpZD0iZ3JvdXBzLWZvb3Rlci10ZXh0IiBzdHlsZT0icGFkZGluZy10b3A6NHB4OyBm 
+b250LWZhbWlseTphcmlhbCxzYW5zLXNlcmlmO2NvbG9yOiM2MzYzNjM7IGZvbnQtc2l6ZToxMXB4 
+Ij4KICAgICAgPGEgc3R5bGU9Y29sb3I6MTVjO3RleHQtZGVjb3JhdGlvbjpub25lIGhyZWY9Imh0 
+dHBzOi8vZ3JvdXBzLmdvb2dsZS5jb20vZ3JvdXBzL2NyZWF0ZT9obD1pdyZzcmM9ZW1haWwiPteU 
+16rXl9ecPC9hPiDXp9eR15XXpteUINee16nXnNeaLCA8YSBzdHlsZT1jb2xvcjoxNWM7dGV4dC1k 
+ZWNvcmF0aW9uOm5vbmUgaHJlZj0iaHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL3N1cHBvcnQvP2hs 
+PWl3JnNyYz1lbWFpbCI+15HXp9eoPC9hPiDXkdee16jXm9eWINeU16LXlteo15QsINeQ15UgPGEg 
+c3R5bGU9Y29sb3I6MTVjO3RleHQtZGVjb3JhdGlvbjpub25lIGhyZWY9Imh0dHBzOi8vZ3JvdXBz 
+Lmdvb2dsZS5jb20vZ3JvdXBzL2FidXNlP2hsPWl3JnNyYz1lbWFpbCI+15PXldeV15cg16LXnDwv 
+YT4g16DXmdem15XXnCDXnNeo16LXlC4gCiAgIDwvcD4KPC9kaXY+CgogIDwvYm9keT4KPC9odG1s 
+Pgo= 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6-- 
+--f46d043be2a23ca75e04c88b4356 
+Content-Type: message/rfc822; charset=ISO-8859-1 
+Content-Disposition: inline 
+ 
+Received: by 10.180.24.135 with SMTP id u7mr219712wif.3.1346400360745; 
+        Fri, 31 Aug 2012 01:06:00 -0700 (PDT) 
+Received: by 10.180.24.135 with SMTP id u7mr219711wif.3.1346400360730; 
+        Fri, 31 Aug 2012 01:06:00 -0700 (PDT) 
+Return-Path: <avitaldoft@gmail.com> 
+Received: from mail-wi0-f172.google.com (mail-wi0-f172.google.com [209.85.212.172]) 
+        by gmr-mx.google.com with ESMTPS id i17si694209wiw.0.2012.08.31.01.06.00 
+        (version=TLSv1/SSLv3 cipher=OTHER); 
+        Fri, 31 Aug 2012 01:06:00 -0700 (PDT) 
+Received-SPF: pass (google.com: domain of avitaldoft@gmail.com designates 209.85.212.172 as permitted sender) client-ip=209.85.212.172; 
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of avitaldoft@gmail.com designates 209.85.212.172 as permitted sender) smtp.mail=avitaldoft@gmail.com; dkim=pass header.i=@gmail.com 
+Received: by wicr5 with SMTP id r5so1295615wic.1 
+        for <bruchin@googlegroups.com>; Fri, 31 Aug 2012 01:06:00 -0700 (PDT) 
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+        d=gmail.com; s=20120113; 
+        h=subject:from:content-type:x-mailer:message-id:date:to 
+         :content-transfer-encoding:mime-version; 
+        bh=hM+HgXnOb/7ewRejR36tYb5/gTXmEMVOFkkbCqC1F7I=; 
+        b=Noa+hXpmxr2WngIraaBQAOwHjuYc1pmKuXCRwwJcP3y28eEIDqrPk2F+wGHj56Bl7S 
+         cXLpwxfQEJJn87zCGM3/n5bYoNabx5gYR/T4ujREl5sK9Iou5xNCKWCZ2K15PXF/5yDo 
+         t5filIEqQyewMQDZ4W8JGyXBGD8VZ/T/ZmPi0efVZaNrhdIK2LReJ6J3JsTMF3rJQe1M 
+         lRNl0+Ub8iUJj4EYUwZcj7gl8GCMARJbED9RDU6oVfK4V8GC8UEw4cGLke8TCo18a8u5 
+         9rr2yvLTAAryCinPnR66mbZrzJb2gTPMw+9psKuF4G+9Q7LzYok+gqqlAymGVdA4cbLv 
+         Cgsg== 
+Received: by 10.216.198.234 with SMTP id v84mr4073394wen.204.1346400360572; 
+        Fri, 31 Aug 2012 01:06:00 -0700 (PDT) 
+Return-Path: <avitaldoft@gmail.com> 
+Received: from [10.0.0.1] ([95.35.4.19]) 
+        by mx.google.com with ESMTPS id do5sm7735072wib.10.2012.08.31.01.05.58 
+        (version=TLSv1/SSLv3 cipher=OTHER); 
+        Fri, 31 Aug 2012 01:05:59 -0700 (PDT) 
+Subject: =?utf-8?B?15nXqSDXnNee15nXqdeU15Ug15HXnten16jXlCDXkNen15PXlyA=?= 
+ =?utf-8?B?16HXmdeb15XXqiDXnNeU16nXkNec15Qg15zXm9ee15Qg16nXoteV?= 
+ =?utf-8?B?16o/INeq15XXk9eUIA==?= 
+From: =?utf-8?B?15DXkdeZ15jXnA==?= <avitaldoft@gmail.com> 
+Content-Type: multipart/alternative; 
+	boundary=Apple-Mail-1-873142408 
+X-Mailer: iPhone Mail (8H7) 
+Message-Id: <D32631CD-1431-4893-A928-37057366AC28@gmail.com> 
+Date: Fri, 31 Aug 2012 11:00:42 +0300 
+To: Bruchin <bruchin@googlegroups.com> 
+Content-Transfer-Encoding: 7bit 
+Mime-Version: 1.0 (iPhone Mail 8H7) 
+ 
+ 
+--Apple-Mail-1-873142408 
+Content-Transfer-Encoding: base64 
+Content-Type: text/plain; 
+	charset=utf-8 
+ 
+DQoNCteQ15HXmdeY15wg15PXldek15g= 
+ 
+--Apple-Mail-1-873142408 
+Content-Transfer-Encoding: quoted-printable 
+Content-Type: text/html; 
+	charset=utf-8 
+ 
+<html><body bgcolor=3D"#FFFFFF"><div></div><div><br><br><div style=3D"text-a= 
+lign: right;direction: rtl; ">=D7=90=D7=91=D7=99=D7=98=D7=9C =D7=93=D7=95=D7= 
+=A4=D7=98</div></div></body></html>= 
+ 
+--Apple-Mail-1-873142408-- 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>RESULTS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Sender:avitaldoft@gmail.com
+Subject:יש למישהו במקרה אקדח סיכות להשאלה לכמה שעות? תודה   
+Content:אביטל דופט

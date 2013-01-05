@@ -109,7 +109,10 @@ public class KeywordAddOn extends InAddOn {
 							"remove@" + Configurations.getMailHost(), 
 							StringPatterns.MISTAKE_ALERT_SUBJECT, 
 							String.format( StringPatterns.MISTAKE_ALERT_BODY , subject ),
-							"UTF-16" );
+							"UTF-16",
+							false);
+					
+					break;
 
 				}
 

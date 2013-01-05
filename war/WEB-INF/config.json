@@ -9,5 +9,6 @@
 				addon_class : "il.co.rotstein.server.addons.in.KeywordAddOn",
 				params : ["\u05D0\u05DE\u05E0\u05D5\u05DF,35","\u05E0\u05D5\u05E2\u05D4,35","\u05DE\u05D5\u05E9\u05D7\u05EA"]
 			}],
-	persistency_service_class : "il.co.rotstein.server.persistency.gae.GAEPersistencyServiceImpl"
+	persistency_service_class : "il.co.rotstein.server.persistency.gae.GAEPersistencyServiceImpl",
+	statistics_service_class : "il.co.rotstein.server.statistics.gae.GAEStatisticsServiceImpl"
 }

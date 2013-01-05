@@ -35,7 +35,7 @@ public interface PersistencyService {
 	public void remove( Message message ) throws PersistencyServiceException;
 	
 	/**
-	 * remove list od messages from persistency
+	 * remove list of messages from persistency
 	 * @param messages
 	 * @throws PersistencyServiceException
 	 */

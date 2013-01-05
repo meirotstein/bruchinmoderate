@@ -6,20 +6,26 @@ import il.co.rotstein.server.addons.AddOn.AddOnResult;
 import il.co.rotstein.server.common.StringPatterns;
 import il.co.rotstein.server.config.Configurations;
 import il.co.rotstein.server.exception.MailOperationException;
+import il.co.rotstein.server.exception.StatisticsServiceException;
+import il.co.rotstein.server.exception.WrongParamException;
 import il.co.rotstein.server.mail.MailHandler;
 import il.co.rotstein.server.mail.MailUtils;
 import il.co.rotstein.server.queue.MessagesQueue;
 import il.co.rotstein.server.queue.OlderThenSatisfier;
 import il.co.rotstein.server.queue.SenderSatisfier;
+import il.co.rotstein.server.statistics.StatisticsService;
+import il.co.rotstein.server.statistics.StatisticsServiceFactory;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Pattern;
 
 import javax.mail.Message;
 import javax.mail.Message.RecipientType;
@@ -31,6 +37,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.xml.utils.WrongParserException;
+
+import com.google.gwt.core.client.ScriptInjector.FromString;
+
 public class ModerationService extends HttpServlet {
 
 	/**
@@ -38,6 +48,7 @@ public class ModerationService extends HttpServlet {
 	 */
 
 	private static final String FREE_PENDING_REQ = "/freepending";
+	private static final String STAT_REQ = "/stat";
 
 	private static String MODERATOR_SENDER = "{0}+msgappr@googlegroups.com";
 	private static String SUPER_ADMIN;
@@ -50,6 +61,7 @@ public class ModerationService extends HttpServlet {
 	private static final long serialVersionUID = 8934486967870817021L;
 	private Session session;
 	private MessagesQueue mQueue = new MessagesQueue(); 
+	private StatisticsService statService;	
 
 	private OlderThenSatisfier olderThenSatisfier = new OlderThenSatisfier();
 
@@ -60,7 +72,7 @@ public class ModerationService extends HttpServlet {
 		super.init( config );
 
 		log.log( Level.FINE , "Service gets up, queue size: " + mQueue.size() );
-		
+
 		//extract configurations
 		Configurations.load( config.getServletContext() );
 
@@ -78,6 +90,17 @@ public class ModerationService extends HttpServlet {
 		DO_NOT_MODERATE_KEY = Configurations.getDoNotModerateKey();
 
 		AddOnsManager.loadAddOns( Configurations.getAddOnConfigurations() );
+
+		//load statistics service
+		try {
+
+			statService = StatisticsServiceFactory.getService( session );			
+
+		} catch ( StatisticsServiceException sse ) {
+
+			log.log( Level.WARNING , "fail to load Statistics Service, error: " + sse.getMessage() );
+
+		}
 
 	}
 
@@ -103,18 +126,24 @@ public class ModerationService extends HttpServlet {
 					if( Configurations.getIgnoreSet().contains( realSender ) ) {
 
 						MailHandler.send(	SUPER_ADMIN , 
-											null,
-											null,
-											DO_NOT_REPLY, 
-											null, 
-											String.format( StringPatterns.MANUAL_MODERATION_SUBJECT , realSender ), 
-											String.format( StringPatterns.MANUAL_MODERATION_BODY , Configurations.getGroupName() ),									 
-											"UTF-8" );
+								null,
+								null,
+								DO_NOT_REPLY, 
+								null, 
+								String.format( StringPatterns.MANUAL_MODERATION_SUBJECT , realSender ), 
+								String.format( StringPatterns.MANUAL_MODERATION_BODY , Configurations.getGroupName() ),									 
+								"UTF-8",
+								false);
+
+						if( statService != null ) {
+							String sbjct = MailUtils.fetchSubjectFromInnerMessage( message );
+							statService.logManualModeration( new Date() , realSender , sbjct );
+						}
 
 						return;
 
 					}
-					
+
 					String subject = MailUtils.fetchSubjectFromInnerMessage( message );
 
 					//check for do-not-moderate char - if presents - free immediately
@@ -122,39 +151,44 @@ public class ModerationService extends HttpServlet {
 
 						MailHandler.replyblank( message , MODERATE_TARGET );
 						log.info( "Message was redirected immediately as per sender request: "  + realSender );
+
+						if( statService != null ) {
+							statService.logSkipModerationRequest( new Date() , realSender , subject);
+						}
+
 						return;
-						
+
 					}
 
 				} catch ( MailOperationException moe ) {
-					
+
 					log.warning( "Fail to extract detail from inner message - skipping the pre moderation parts " + moe.getMessage() );
 					notifyAdminForError( "Pre moderation was skipped " , moe );
-					
+
 				}
 
 				//execute addOns
 				List<InAddOn> inAddOns = AddOnsManager.getIncomingAddOns();
-				
+
 				log.log( Level.FINE , "Executing " + inAddOns.size() + " addons" );
 
 				for ( InAddOn inAddOn : inAddOns ){
-					
+
 					log.log( Level.FINE , "Executing addon " + inAddOn.getClass().getName() );
-					
+
 					try {
-						
+
 						AddOnResult result = inAddOn.manipulate( message );
-	
+
 						if( result == AddOnResult.Abort ){
 							return;
 						}
-					
+
 					} catch ( Throwable t ) { //add on execution must not interrupt the main flow 
-						
+
 						log.log( Level.WARNING , "Error while add on execution" ,  t );
 						notifyAdminForError( "Error while add on execution" , t );
-						
+
 					}
 
 				}
@@ -174,20 +208,26 @@ public class ModerationService extends HttpServlet {
 					List<Message> msgs = mQueue.pop( ss );
 
 					if( msgs.size() > 0 ) {
-						
+
 						StringBuilder sb = new StringBuilder();
-						
+
 						for( Message msg : msgs ) {
-							
+
 							try {
-							
-								sb.append( MailUtils.fetchSubjectFromInnerMessage( msg ) );
+
+								String sbjct = MailUtils.fetchSubjectFromInnerMessage( msg ); 
+
+								sb.append( sbjct );
 								sb.append( "\n" );
-							
+
+								if( statService != null ){
+									statService.logRemoveRequest( new Date() , sender , sbjct );
+								}
+
 							} catch ( MailOperationException  moe ) {
 								//ignore
 							}
-							
+
 						}
 
 						MailHandler.send( 	sender , 
@@ -197,22 +237,24 @@ public class ModerationService extends HttpServlet {
 								null, 
 								msgs.size() > 1 ? 
 										String.format( StringPatterns.MESSAGES_REMOVED_SUBJECT , msgs.size() ) : 
-										StringPatterns.MESSAGE_REMOVED_SUBJECT, 
-								msgs.size() > 1 ? 
-										String.format( StringPatterns.MESSAGES_REMOVED_BODY , msgs.size() , sb.toString() ) : 
-										String.format( StringPatterns.MESSAGE_REMOVED_BODY , sb.toString() ),
-								"UTF-16" );
+											StringPatterns.MESSAGE_REMOVED_SUBJECT, 
+											msgs.size() > 1 ? 
+													String.format( StringPatterns.MESSAGES_REMOVED_BODY , msgs.size() , sb.toString() ) : 
+														String.format( StringPatterns.MESSAGE_REMOVED_BODY , sb.toString() ),
+								"UTF-16",
+								false);
 
 					} else {
 
 						MailHandler.send( 	sender , 
-											null,
-											SUPER_ADMIN,
-											REMOVE_TARGET, 
-											REMOVE_TARGET, 
-											StringPatterns.MESSAGE_NOT_FOUND_SUBJECT,
-											String.format( StringPatterns.MESSAGE_NOT_FOUND_BODY , sender ),										
-											"UTF-16" );
+								null,
+								SUPER_ADMIN,
+								REMOVE_TARGET, 
+								REMOVE_TARGET, 
+								StringPatterns.MESSAGE_NOT_FOUND_SUBJECT,
+								String.format( StringPatterns.MESSAGE_NOT_FOUND_BODY , sender ),										
+								"UTF-16",
+								false);
 
 
 					}
@@ -260,16 +302,112 @@ public class ModerationService extends HttpServlet {
 
 			}
 
+		} else if ( STAT_REQ.equals( path )) {
+
+			try {
+				
+				Date from = null;
+				
+				String fromParam = req.getParameter("from");
+				
+				Pattern datePtrn = Pattern.compile("\\d+/\\d+/\\d+");
+				
+				if( fromParam != null ) {
+				
+					if( datePtrn.matcher(fromParam).matches() ){
+						
+						String[] fromParams = fromParam.split("/");
+						
+						Calendar.getInstance().set( Integer.parseInt( fromParams[2] ), 
+													Integer.parseInt( fromParams[1] ) - 1, 
+													Integer.parseInt( fromParams[0] ) );
+						
+						int year = Integer.parseInt( fromParams[2] );
+						int month = Integer.parseInt( fromParams[1] ) - 1;
+						int day = Integer.parseInt( fromParams[0] );
+						
+						if( year < 1900 || month < 0 || month > 12 || day < 0 || day > 31 ) {
+							throw new WrongParamException();
+						}
+						
+						from = new Date( year - 1900 , month, day );					
+						
+					} else {
+						
+						throw new WrongParamException();
+						
+					}			
+				
+				}
+
+				int skipped = statService.countSkipRequests(from);
+				int manual = statService.countManualModerations(from);
+				int removed = statService.countRemoveRequests(from);
+
+				StringBuilder sb = new StringBuilder();
+				
+				sb.append( "<b> Shit! statistics report from: " );
+				sb.append( from != null ? from : "Ever (date of feature upload - 06/01/2013)" );				
+				sb.append( "</b><br>" );
+				
+				sb.append( "<b>Skipped messages: </b>" );
+				sb.append( skipped );
+				sb.append( "<br>" );
+				
+				sb.append( "<b>Manual moderated messages: </b>" );
+				sb.append( manual );
+				sb.append( "<br>" );
+				
+				sb.append( "<b>Removed messages: </b>" );
+				sb.append( removed );
+				sb.append( "<br>" );
+				
+				MailHandler.send( 	SUPER_ADMIN , 
+						null,
+						null,
+						DO_NOT_REPLY, 
+						DO_NOT_REPLY, 
+						"Statistics report for Shit! system: ",
+						sb.toString(),
+						"UTF-8", 
+						true);
+				
+				resp.setContentType("text/html");
+				PrintWriter out = resp.getWriter();
+				out.println("<b>Statistics report was successfully sent to admin: </b>" + Configurations.getSuperAdmin() );
+
+
+			} catch ( WrongParamException e ) {
+
+				resp.setContentType("text/html");
+				PrintWriter out = resp.getWriter();
+
+				out.println("<b>Bad from input</b><br>");
+				out.println("Valid input should be: from=DD/MM/YYYY <br>");
+				out.println("YYYY should be bigger then 1900");
+				
+			} catch ( Exception e ) {
+				
+				resp.setContentType("text/html");
+				PrintWriter out = resp.getWriter();
+
+				out.println( "<b>Error occured:</b><br>" );
+				out.println( e.getMessage() );
+				
+				notifyAdminForError( e.getMessage() , e );
+				
+			} 
+
 		}
 
 	}
 
 	private void notifyAdminForError( String message , Throwable t ) {
-		
+
 		StringWriter sw = new StringWriter();
 		PrintWriter pw = new PrintWriter(sw);
 		t.printStackTrace(pw);
-		
+
 		try {
 
 			MailHandler.send( 	SUPER_ADMIN , 
@@ -279,7 +417,12 @@ public class ModerationService extends HttpServlet {
 					DO_NOT_REPLY, 
 					"Error in Shit! system: " + message,
 					sw.toString(),
-					"UTF-8" );
+					"UTF-8",
+					false);
+
+			if( statService != null ) {
+				statService.logError( new Date() , message );
+			}
 
 		} catch ( Exception killYourself ) {
 			// Another exception? were doomed...

@@ -1,0 +1,117 @@
+--0016e6dab053454b6f04c995cbb6 
+Content-Type: multipart/alternative; boundary="=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6" 
+ 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6 
+Content-Type: text/plain; charset=UTF-8 
+Content-Disposition: inline 
+Content-Transfer-Encoding: base64 
+ 
+Cteg16nXnNeX15Qg15TXldeT16LXlCDXnNen15HXldem15Qg15HXqNeV15vXmdefINeV15TXmdeQ 
+INee157XqteZ16DXlCDXnNeQ15nXqdeV16guINem15nXqNek16DXlSDXkNeqINeU15TXldeT16LX 
+lCDXm9eT15kg16nXqteV15vXnCDXnNei15nXmdefINeR15QuCgrXlNeU15XXk9ei15Qg15PXldeo 
+16nXqiDXqteZ15XXldeaINee15vXmdeV15XXnyDXqdeQ15nXnyDXnNee16nXqtee16kg15TXqNep 
+15DXlCDXnNek16jXodedINek16jXmdeY15nXnS4KCteg15nXqtefINec15DXqdeoINeQ15Ug15zX 
+k9eX15XXqiDXkNeqINeU15TXldeT16LXlCDXkdeQ15XXpNefINee16fXldeV158g15HXm9eq15XX 
+kdeqOiAKaHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL2dyb3VwL2JydWNoaW4vcGVuZG1zZz9obD1p 
+dyAKCteQ15UgCgrXoNeZ16rXnyDXnNeQ16nXqCDXkNeqINeU15TXldeT16LXlCDXkdeQ157Xptei 
+15XXqiDXntei16DXlCDXnNeU15XXk9ei16og15PXldeQItecINeW15UuCg== 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6 
+Content-Type: text/html; charset=UTF-8 
+Content-Disposition: inline 
+Content-Transfer-Encoding: base64 
+ 
+PGh0bWw+CiAgPGhlYWQ+PC9oZWFkPgogIDxib2R5PgoKICAKPHRhYmxlIGlkPSJncm91cHMtbWFp 
+bi1jb250ZW50IiBzdHlsZT0icG9zaXRpb246Y2VudGVyO21hcmdpbjowIDI1cHggMCAyNXB4OyBh 
+dXRvO2ZvbnQtZmFtaWx5OmFyaWFsLHNhbnMtc2VyaWYiIGNlbGxwYWRkaW5nPTAgY2VsbHNwYWNp 
+bmc9MD4KCgogICAgPHA+CiAgICAKICAgINeg16nXnNeX15Qg15TXldeT16LXlCDXnNen15HXldem 
+15QgCiAgCiAgICA8YSBzdHlsZT1jb2xvcjoxNWM7dGV4dC1kZWNvcmF0aW9uOm5vbmUgaHJlZj0i 
+aHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL2dyb3VwL2JydWNoaW4/aGw9aXciPmJydWNoaW48L2E+ 
+CiAgCiDXldeU15nXkCDXntee16rXmdeg15Qg15zXkNeZ16nXldeoLiDXpteZ16jXpNeg15Ug15TX 
+ldeT16LXlCDXlteVINeb15PXmSDXqdeq15XXm9ecINec16LXmdeZ158g15HXlC48L3A+CgogICA8 
+cD4KICAg15TXlNeV15PXoteUINeT15XXqNep16og16rXmdeV15XXmiDXnteb15nXldeV158g16nX 
+kNeZ158g15zXntep16rXntepINeU16jXqdeQ15Qg15zXpNeo16HXnSDXpNeo15nXmNeZ150uPC9w 
+PgoKICAgIDxwPteq15XXm9ecIDxhIHN0eWxlPWNvbG9yOjE1Yzt0ZXh0LWRlY29yYXRpb246bm9u 
+ZSBocmVmPSJodHRwOi8vZ3JvdXBzLmdvb2dsZS5jb20vZ3JvdXAvYnJ1Y2hpbi9wZW5kbXNnP2hs 
+PWl3Ij7XnNeQ16nXqCDXkNeVINec15PXl9eV16o8L2E+INeU15XXk9ei15Qg15bXlSDXkNeVINep 
+16rXldeb15wg15zXkNep16gg15TXldeT16LXlCDXlteVINei15wg15nXk9eZINee16LXoNeUINec 
+15PXldeQItecINeW15QuPC9wPgoKICAKICA8ZGl2IHN0eWxlPSJtYXJnaW46MzBweCAyNXB4IDIw 
+cHggMjRweDsiPgogICA8YSBpZD0iZ3JvdXBzLWxvZ28iIHN0eWxlPSJmbG9hdDpsZWZ0OyBwYWRk 
+aW5nLXJpZ2h0OjIwcHg7IiBocmVmPSIiPgogICAgICAgPGltZyAgaGVpZ2h0PTI1cHggc3JjPSJo 
+dHRwczovL3d3dy5nb29nbGUuY29tL2ludGwvaXcvaW1hZ2VzL2xvZ29zL2dyb3Vwc19sb2dvLnBu 
+ZyIgYWx0PSLXkden16gg15EmIzM5O9en15HXldem15XXqiBHb29nbGUmIzM5OyIgLz4KICAgPC9h 
+PgogICA8cCBpZD0iZ3JvdXBzLWZvb3Rlci10ZXh0IiBzdHlsZT0icGFkZGluZy10b3A6NHB4OyBm 
+b250LWZhbWlseTphcmlhbCxzYW5zLXNlcmlmO2NvbG9yOiM2MzYzNjM7IGZvbnQtc2l6ZToxMXB4 
+Ij4KICAgICAgPGEgc3R5bGU9Y29sb3I6MTVjO3RleHQtZGVjb3JhdGlvbjpub25lIGhyZWY9Imh0 
+dHBzOi8vZ3JvdXBzLmdvb2dsZS5jb20vZ3JvdXBzL2NyZWF0ZT9obD1pdyZzcmM9ZW1haWwiPteU 
+16rXl9ecPC9hPiDXp9eR15XXpteUINee16nXnNeaLCA8YSBzdHlsZT1jb2xvcjoxNWM7dGV4dC1k 
+ZWNvcmF0aW9uOm5vbmUgaHJlZj0iaHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL3N1cHBvcnQvP2hs 
+PWl3JnNyYz1lbWFpbCI+15HXp9eoPC9hPiDXkdee16jXm9eWINeU16LXlteo15QsINeQ15UgPGEg 
+c3R5bGU9Y29sb3I6MTVjO3RleHQtZGVjb3JhdGlvbjpub25lIGhyZWY9Imh0dHBzOi8vZ3JvdXBz 
+Lmdvb2dsZS5jb20vZ3JvdXBzL2FidXNlP2hsPWl3JnNyYz1lbWFpbCI+15PXldeV15cg16LXnDwv 
+YT4g16DXmdem15XXnCDXnNeo16LXlC4gCiAgIDwvcD4KPC9kaXY+CgogIDwvYm9keT4KPC9odG1s 
+Pgo= 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6-- 
+--0016e6dab053454b6f04c995cbb6 
+Content-Type: message/rfc822; charset=ISO-8859-1 
+Content-Disposition: inline 
+ 
+Received: by 10.181.11.234 with SMTP id el10mr466999wid.2.1347545104230; 
+        Thu, 13 Sep 2012 07:05:04 -0700 (PDT) 
+Received: by 10.181.11.234 with SMTP id el10mr466997wid.2.1347545104217; 
+        Thu, 13 Sep 2012 07:05:04 -0700 (PDT) 
+Return-Path: <moriyau@walla.com> 
+Received: from walla.com (fmail14.walla.com. [192.118.69.14]) 
+        by gmr-mx.google.com with ESMTPS id em7si1816309wib.2.2012.09.13.07.05.03 
+        (version=TLSv1/SSLv3 cipher=OTHER); 
+        Thu, 13 Sep 2012 07:05:04 -0700 (PDT) 
+Received-SPF: pass (google.com: domain of moriyau@walla.com designates 192.118.69.14 as permitted sender) client-ip=192.118.69.14; 
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of moriyau@walla.com designates 192.118.69.14 as permitted sender) smtp.mail=moriyau@walla.com 
+Received: from omail164.walla.co.il (omail164.walla.co.il [192.118.71.164]) 
+	by fmail14.walla.co.il  with ESMTP id q8DE53PM012518-q8DE53PN012518 
+	for <bruchin@googlegroups.com>; Thu, 13 Sep 2012 17:05:03 +0300 
+Received: from omail164.walla.co.il (omail164 [127.0.0.1]) 
+	by omail164.walla.co.il (8.14.3/8.13.5) with ESMTP id q8DE53ft013128 
+	for <bruchin@googlegroups.com>; Thu, 13 Sep 2012 17:05:03 +0300 
+Received: (from informix@localhost) 
+	by omail164.walla.co.il (8.14.3/8.13.1/Submit) id q8DE53J8013127; 
+	Thu, 13 Sep 2012 17:05:03 +0300 
+Date: Thu, 13 Sep 2012 17:05:03 +0300 
+Received: from ([95.86.126.211]) 
+	by omail164.walla.co.il ([192.118.71.164]) with HTTP; 
+	Thu, 13 Sep 2012 17:05:03 +0300 
+From: =?UTF-8?Q?=D7=9E=D7=95=D7=A8=D7=99=D7=94=20=D7=90=D7=93=D7=9C=D7=A8?= <moriyau@walla.com> 
+X-Sender: moriyau@walla.com 
+X-Originating-Email: [moriyau@walla.com] 
+X-Originating-IP: [95.86.126.211] 
+To: <bruchin@googlegroups.com> 
+Subject: =?UTF-8?Q?=D7=91=D7=99=D7=91=D7=99=D7=A1=D7=99=D7=98=D7=A8=20=D7=9C=D7=94=D7=A2=D7=A8=D7=91?= 
+Message-Id: <1347545103.001000-91565082-13113@walla.com> 
+MIME-Version: 1.0 
+Content-Type: multipart/mixed; boundary="------=_EREZ_P_WallaMail_15760_8706_P_0" 
+ 
+--------=_EREZ_P_WallaMail_15760_8706_P_0 
+Content-Type: multipart/alternative; boundary="------=_EREZ_P_WallaMail_10351_1156_P_1" 
+ 
+--------=_EREZ_P_WallaMail_10351_1156_P_1 
+Content-Type: text/html; charset=UTF-8 
+Content-Transfer-Encoding: base64 
+ 
+PGRpdiBkaXI9J3J0bCc+PFA+PEJSPtep15zXldedITwvUD4NCjxQPtee15fX 
+pNep16og15HXmdeR15nXodeZ15jXqCDXnNeU16LXqNeRLiDXkdeh15HXmdeR 
+15XXqiAwODozMC0gMTE6MDA8L1A+DQo8UD7XnteZINeZ15vXldecL9eUPzwv 
+UD4NCjxQPtee15XXqNeZ15Qg15DXk9ec16g8L1A+DQo8UD4wNTAyODAwMjQ5 
+DQo8SFI+DQo8L1A+DQo8RElWIGRpcj1ydGw+DQo8UD4mbmJzcDs8L1A+PC9E 
+SVY+PC9kaXY+PGhyPjxkaXYgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6d2hp 
+dGU7Y29sb3I6YmxhY2s7Ij5XYWxsYSEgTWFpbCAtIDxhIGhyZWY9Imh0dHA6 
+Ly93d3cud2FsbGEuY28uaWwiIHN0eWxlPSJjb2xvcjpibHVlIj5HZXQgeW91 
+ciBmcmVlIHVubGltaXRlZCBtYWlsIHRvZGF5PC9hPjwvZGl2PgA= 
+ 
+--------=_EREZ_P_WallaMail_10351_1156_P_1-- 
+ 
+--------=_EREZ_P_WallaMail_15760_8706_P_0-- 
+ 
+--0016e6dab053454b6f04c995cbb6--
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>RESULTS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Sender:moriyau@walla.com
+Subject:ביביסיטר להערב
+Content:

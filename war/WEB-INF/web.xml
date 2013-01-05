@@ -18,6 +18,10 @@
 		<servlet-name>mailhandler</servlet-name>
 		<url-pattern>/freepending</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>mailhandler</servlet-name>
+		<url-pattern>/stat</url-pattern>
+	</servlet-mapping>
 	<security-constraint>
 		<web-resource-collection>
 			<url-pattern>/_ah/mail/*</url-pattern>

@@ -1,0 +1,165 @@
+--000e0cd6d14c3a63eb04c88aef86 
+Content-Type: multipart/alternative; boundary="=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6" 
+ 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6 
+Content-Type: text/plain; charset=UTF-8 
+Content-Disposition: inline 
+Content-Transfer-Encoding: base64 
+ 
+Cteg16nXnNeX15Qg15TXldeT16LXlCDXnNen15HXldem15Qg15HXqNeV15vXmdefINeV15TXmdeQ 
+INee157XqteZ16DXlCDXnNeQ15nXqdeV16guINem15nXqNek16DXlSDXkNeqINeU15TXldeT16LX 
+lCDXm9eT15kg16nXqteV15vXnCDXnNei15nXmdefINeR15QuCgrXlNeU15XXk9ei15Qg15PXldeo 
+16nXqiDXqteZ15XXldeaINee15vXmdeV15XXnyDXqdeQ15nXnyDXnNee16nXqtee16kg15TXqNep 
+15DXlCDXnNek16jXodedINek16jXmdeY15nXnS4KCteg15nXqtefINec15DXqdeoINeQ15Ug15zX 
+k9eX15XXqiDXkNeqINeU15TXldeT16LXlCDXkdeQ15XXpNefINee16fXldeV158g15HXm9eq15XX 
+kdeqOiAKaHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL2dyb3VwL2JydWNoaW4vcGVuZG1zZz9obD1p 
+dyAKCteQ15UgCgrXoNeZ16rXnyDXnNeQ16nXqCDXkNeqINeU15TXldeT16LXlCDXkdeQ157Xptei 
+15XXqiDXntei16DXlCDXnNeU15XXk9ei16og15PXldeQItecINeW15UuCg== 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6 
+Content-Type: text/html; charset=UTF-8 
+Content-Disposition: inline 
+Content-Transfer-Encoding: base64 
+ 
+PGh0bWw+CiAgPGhlYWQ+PC9oZWFkPgogIDxib2R5PgoKICAKPHRhYmxlIGlkPSJncm91cHMtbWFp 
+bi1jb250ZW50IiBzdHlsZT0icG9zaXRpb246Y2VudGVyO21hcmdpbjowIDI1cHggMCAyNXB4OyBh 
+dXRvO2ZvbnQtZmFtaWx5OmFyaWFsLHNhbnMtc2VyaWYiIGNlbGxwYWRkaW5nPTAgY2VsbHNwYWNp 
+bmc9MD4KCgogICAgPHA+CiAgICAKICAgINeg16nXnNeX15Qg15TXldeT16LXlCDXnNen15HXldem 
+15QgCiAgCiAgICA8YSBzdHlsZT1jb2xvcjoxNWM7dGV4dC1kZWNvcmF0aW9uOm5vbmUgaHJlZj0i 
+aHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL2dyb3VwL2JydWNoaW4/aGw9aXciPmJydWNoaW48L2E+ 
+CiAgCiDXldeU15nXkCDXntee16rXmdeg15Qg15zXkNeZ16nXldeoLiDXpteZ16jXpNeg15Ug15TX 
+ldeT16LXlCDXlteVINeb15PXmSDXqdeq15XXm9ecINec16LXmdeZ158g15HXlC48L3A+CgogICA8 
+cD4KICAg15TXlNeV15PXoteUINeT15XXqNep16og16rXmdeV15XXmiDXnteb15nXldeV158g16nX 
+kNeZ158g15zXntep16rXntepINeU16jXqdeQ15Qg15zXpNeo16HXnSDXpNeo15nXmNeZ150uPC9w 
+PgoKICAgIDxwPteq15XXm9ecIDxhIHN0eWxlPWNvbG9yOjE1Yzt0ZXh0LWRlY29yYXRpb246bm9u 
+ZSBocmVmPSJodHRwOi8vZ3JvdXBzLmdvb2dsZS5jb20vZ3JvdXAvYnJ1Y2hpbi9wZW5kbXNnP2hs 
+PWl3Ij7XnNeQ16nXqCDXkNeVINec15PXl9eV16o8L2E+INeU15XXk9ei15Qg15bXlSDXkNeVINep 
+16rXldeb15wg15zXkNep16gg15TXldeT16LXlCDXlteVINei15wg15nXk9eZINee16LXoNeUINec 
+15PXldeQItecINeW15QuPC9wPgoKICAKICA8ZGl2IHN0eWxlPSJtYXJnaW46MzBweCAyNXB4IDIw 
+cHggMjRweDsiPgogICA8YSBpZD0iZ3JvdXBzLWxvZ28iIHN0eWxlPSJmbG9hdDpsZWZ0OyBwYWRk 
+aW5nLXJpZ2h0OjIwcHg7IiBocmVmPSIiPgogICAgICAgPGltZyAgaGVpZ2h0PTI1cHggc3JjPSJo 
+dHRwczovL3d3dy5nb29nbGUuY29tL2ludGwvaXcvaW1hZ2VzL2xvZ29zL2dyb3Vwc19sb2dvLnBu 
+ZyIgYWx0PSLXkden16gg15EmIzM5O9en15HXldem15XXqiBHb29nbGUmIzM5OyIgLz4KICAgPC9h 
+PgogICA8cCBpZD0iZ3JvdXBzLWZvb3Rlci10ZXh0IiBzdHlsZT0icGFkZGluZy10b3A6NHB4OyBm 
+b250LWZhbWlseTphcmlhbCxzYW5zLXNlcmlmO2NvbG9yOiM2MzYzNjM7IGZvbnQtc2l6ZToxMXB4 
+Ij4KICAgICAgPGEgc3R5bGU9Y29sb3I6MTVjO3RleHQtZGVjb3JhdGlvbjpub25lIGhyZWY9Imh0 
+dHBzOi8vZ3JvdXBzLmdvb2dsZS5jb20vZ3JvdXBzL2NyZWF0ZT9obD1pdyZzcmM9ZW1haWwiPteU 
+16rXl9ecPC9hPiDXp9eR15XXpteUINee16nXnNeaLCA8YSBzdHlsZT1jb2xvcjoxNWM7dGV4dC1k 
+ZWNvcmF0aW9uOm5vbmUgaHJlZj0iaHR0cDovL2dyb3Vwcy5nb29nbGUuY29tL3N1cHBvcnQvP2hs 
+PWl3JnNyYz1lbWFpbCI+15HXp9eoPC9hPiDXkdee16jXm9eWINeU16LXlteo15QsINeQ15UgPGEg 
+c3R5bGU9Y29sb3I6MTVjO3RleHQtZGVjb3JhdGlvbjpub25lIGhyZWY9Imh0dHBzOi8vZ3JvdXBz 
+Lmdvb2dsZS5jb20vZ3JvdXBzL2FidXNlP2hsPWl3JnNyYz1lbWFpbCI+15PXldeV15cg16LXnDwv 
+YT4g16DXmdem15XXnCDXnNeo16LXlC4gCiAgIDwvcD4KPC9kaXY+CgogIDwvYm9keT4KPC9odG1s 
+Pgo= 
+--=_hhLr6ib8kqpgxN8dG6slPUBvE98MWRSB6-- 
+--000e0cd6d14c3a63eb04c88aef86 
+Content-Type: message/rfc822; charset=ISO-8859-1 
+Content-Disposition: inline 
+Content-Transfer-Encoding: quoted-printable 
+ 
+Received: by 10.50.140.5 with SMTP id rc5mr740464igb.1.1346398951305; 
+        Fri, 31 Aug 2012 00:42:31 -0700 (PDT) 
+Received: by 10.50.140.5 with SMTP id rc5mr740463igb.1.1346398951292; 
+        Fri, 31 Aug 2012 00:42:31 -0700 (PDT) 
+Return-Path: <alainfuss@yahoo.com> 
+Received: from nm25-vm2.bullet.mail.ne1.yahoo.com (nm25-vm2.bullet.mail.ne1= 
+.yahoo.com. [98.138.91.213]) 
+        by gmr-mx.google.com with SMTP id dd6si1074532igc.0.2012.08.31.00.4= 
+2.31; 
+        Fri, 31 Aug 2012 00:42:31 -0700 (PDT) 
+Received-SPF: pass (google.com: best guess record for domain of alainfuss@y= 
+ahoo.com designates 98.138.91.213 as permitted sender) client-ip=3D98.138.9= 
+1.213; 
+Authentication-Results: gmr-mx.google.com; spf=3Dpass (google.com: best gue= 
+ss record for domain of alainfuss@yahoo.com designates 98.138.91.213 as per= 
+mitted sender) smtp.mail=3Dalainfuss@yahoo.com; dkim=3Dpass (test mode) hea= 
+der.i=3D@yahoo.com 
+Received: from [98.138.90.51] by nm25.bullet.mail.ne1.yahoo.com with NNFMP;= 
+ 31 Aug 2012 07:42:31 -0000 
+Received: from [98.138.89.251] by tm4.bullet.mail.ne1.yahoo.com with NNFMP;= 
+ 31 Aug 2012 07:42:31 -0000 
+Received: from [127.0.0.1] by omp1043.mail.ne1.yahoo.com with NNFMP; 31 Aug= 
+ 2012 07:42:30 -0000 
+X-Yahoo-Newman-Id: 996695.72492.bm@omp1043.mail.ne1.yahoo.com 
+Received: (qmail 8295 invoked from network); 31 Aug 2012 07:42:30 -0000 
+DomainKey-Signature: a=3Drsa-sha1; q=3Ddns; c=3Dnofws; 
+  s=3Ds1024; d=3Dyahoo.com; 
+  h=3DDKIM-Signature:X-Yahoo-Newman-Property:X-YMail-OSG:X-Yahoo-SMTP:Recei= 
+ved:Subject:From:Content-Type:X-Mailer:Message-Id:Date:To:Content-Transfer-= 
+Encoding:Mime-Version; 
+  b=3Dobij1+dKEiKHLJjvYVyH0Fl3YVWzwAp40U0wKa8tQjSmvF6/s9sOEWRtBP5yvT4cZvU6j= 
+PA1jo+AF6PrbZHB0rU0sMWNEzm2Dbe4oGuLtaYGhlYJ9OEuCcmIrgZHdksCuJGGsCZqb7eYHpts= 
+he1endMmxynS7HQx1cgxiYGR8A8=3D  ; 
+DKIM-Signature: v=3D1; a=3Drsa-sha256; c=3Drelaxed/relaxed; d=3Dyahoo.com; = 
+s=3Ds1024; t=3D1346398950; bh=3D6TRo21j0WQEiH4a6aiF2mw5U2cjzV03fy7qg8b6rdNY= 
+=3D; h=3DX-Yahoo-Newman-Property:X-YMail-OSG:X-Yahoo-SMTP:Received:Subject:= 
+From:Content-Type:X-Mailer:Message-Id:Date:To:Content-Transfer-Encoding:Mim= 
+e-Version; b=3DDTr6Zk3x08Dy2dg9qqUK4HT/jaL/cP8q9EocAiStYWIzCVpBB0VUsmT8p533= 
+EZ7/wtSPj7sctmqjz7p620NtS85v56a+JMA9HQXUYs6ZWUqJoyuEoiESaVbL8kj4XQ/fV77uPxK= 
+QjtoCEcPOd8Dq1D4xi3mpfj4NtzQGGhPXdo8=3D 
+X-Yahoo-Newman-Property: ymail-3 
+X-YMail-OSG: I3OS2PIVM1kJ7.rjXXz8MB_eCiOmRZUWclMszkdtTQBKZC7 
+ 1y0AT1ZkuwbzOhc9b5znQFYYpZh5K.hQHG6HMLNSjgcsx58he74xCIoajQka 
+ .GoPiaAh0pW9i.el8CZeXrOudlS3Tt5.EZV2cJhumk02vJQ60l6iA_trI12u 
+ Jt3_HwlnhFGUFwYNaZxxtYtOjsu.idJbPsfp9XKJH_GMDAiqqKRXw5.xpFlC 
+ 9zOytgsJ0hJ5EpLmStvCqfAeIOD5yKLggCjmx_NbCEZ0bx28pcIfa2H7jUTp 
+ uGKAzi9j209BZ8xwRVFupOsrYg4FhyOIZkFCdYpPksV19798iDbSYXnBHEFY 
+ Er1bGuDAfMtsoiRgtogi.UjDuVx2iDaVU__u8DUuPqXyEhhMcTSMJI3DtojE 
+ pB6wIe0Z_rFFBHdGsmAXDKW10b5x3zj82MHY7ew68 
+X-Yahoo-SMTP: gfDZvXKswBAJNgRLqLnI7zBNb5Gl.g-- 
+Received: from [10.0.0.1] (alainfuss@95.86.112.147 with xymcookie) 
+        by smtp124-mob.biz.mail.ne1.yahoo.com with SMTP; 31 Aug 2012 07:42:= 
+30 +0000 UTC 
+Subject: =3D?utf-8?B?15DXmdeo15XXlyDXl9eZ15nXnNeZ1506157Xl9ek16nXmdedINee?= 
+=3D 
+ =3D?utf-8?B?16nXpNezINec15DXqNeXIDIg15fXmdeZ15zXmdedINeR16LXqNeR?=3D 
+ =3D?utf-8?B?LiDXqteV15PXlA=3D=3D?=3D 
+From: Alain <alainfuss@yahoo.com> 
+Content-Type: multipart/alternative; 
+	boundary=3DApple-Mail-F1E15405-AE9B-4ED9-A47E-1835C4F21C5C 
+X-Mailer: iPhone Mail (9B206) 
+Message-Id: <8CEB7F0B-1DCC-48F3-84E4-4DF06083C2D2@yahoo.com> 
+Date: Fri, 31 Aug 2012 10:43:31 +0200 
+To: bruchin <bruchin@googlegroups.com> 
+Content-Transfer-Encoding: 7bit 
+Mime-Version: 1.0 (1.0) 
+ 
+ 
+--Apple-Mail-F1E15405-AE9B-4ED9-A47E-1835C4F21C5C 
+Content-Transfer-Encoding: base64 
+Content-Type: text/plain; 
+	charset=3Dutf-8 
+ 
+DQrXnteZINep15nXm9eV15wg16DXkCDXnNeZ16bXldeoINeQ15nXqteZINen16nXqCDXqteV15P= 
+X 
+lCDXnteo15DXqSDXldep15HXqiDXqdec15XXnS4gDQoNCteQ15zXny4gDQoNCg=3D=3D 
+ 
+--Apple-Mail-F1E15405-AE9B-4ED9-A47E-1835C4F21C5C 
+Content-Transfer-Encoding: quoted-printable 
+Content-Type: text/html; 
+	charset=3Dutf-8 
+ 
+<html><head></head><body bgcolor=3D3D"#FFFFFF"><div></div><div><div style= 
+=3D3D"t=3D 
+ext-align: right;direction: rtl; "><br></div><div style=3D3D"text-align: ri= 
+ght=3D 
+;direction: rtl; ">=3DD7=3D9E=3DD7=3D99 =3DD7=3DA9=3DD7=3D99=3DD7=3D9B=3DD7= 
+=3D95=3DD7=3D9C =3DD7=3DA0=3DD7=3D90 =3DD7=3D 
+=3D9C=3DD7=3D99=3DD7=3DA6=3DD7=3D95=3DD7=3DA8 =3DD7=3D90=3DD7=3D99=3DD7=3DA= 
+A=3DD7=3D99 =3DD7=3DA7=3DD7=3DA9=3DD7=3DA8 =3DD7=3DAA=3D 
+=3DD7=3D95=3DD7=3D93=3DD7=3D94 =3DD7=3D9E=3DD7=3DA8=3DD7=3D90=3DD7=3DA9 =3D= 
+D7=3D95=3DD7=3DA9=3DD7=3D91=3DD7=3DAA =3DD7=3DA9=3DD7=3D 
+=3D9C=3DD7=3D95=3DD7=3D9D.&nbsp;</div><div style=3D3D"text-align: right;dir= 
+ection: rtl; "=3D 
+><br></div><div style=3D3D"text-align: right;direction: rtl; ">=3DD7=3D90= 
+=3DD7=3D9C=3DD7=3D 
+=3D9F.&nbsp;</div><div style=3D3D"text-align: right;direction: rtl; "><br><= 
+/div>=3D 
+</div></body></html>=3D 
+ 
+--Apple-Mail-F1E15405-AE9B-4ED9-A47E-1835C4F21C5C-- 
+ 
+--000e0cd6d14c3a63eb04c88aef86--
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>RESULTS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Sender:alainfuss@yahoo.com
+Subject:אירוח חיילים:מחפשים מ==?utf-8?B?16nXpNezINec15DXqNeXIDIg15fXmdeZ15zXmdedINeR16LXqNeR?=. תודה
+Content:*
