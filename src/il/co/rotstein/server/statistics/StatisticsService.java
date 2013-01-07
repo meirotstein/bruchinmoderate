@@ -44,6 +44,15 @@ public interface StatisticsService {
 	public void logManualModeration( Date when , String address , String subject ) throws StatisticsServiceException;
 	
 	/**
+	 * General method for add record to statistics (maily for addons usage) 
+	 * 
+	 * @param when		date of moderated message has been initiated 
+	 * @param address	address of initiator
+	 * @param subject	subject of the moderated message
+	 */
+	public void logCustom( String statId , Date when , String address , String subject ) throws StatisticsServiceException;
+	
+	/**
 	 * @param when	date of raised error
 	 * @param errorMsg	
 	 */
@@ -63,5 +72,10 @@ public interface StatisticsService {
 	 * @param from earliest date of logged messages, if null - count all 	
 	 */
 	public int countManualModerations( Date from ) throws StatisticsServiceException;
+	
+	/**
+	 * @param from earliest date of logged messages, if null - count all 	
+	 */
+	public int countCustom( String statId , Date from ) throws StatisticsServiceException;
 
 }

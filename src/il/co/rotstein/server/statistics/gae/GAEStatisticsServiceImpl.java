@@ -1,23 +1,11 @@
 package il.co.rotstein.server.statistics.gae;
 
-import il.co.rotstein.server.ModeratedMessage;
-import il.co.rotstein.server.exception.PersistencyServiceException;
 import il.co.rotstein.server.exception.StatisticsServiceException;
 import il.co.rotstein.server.statistics.StatisticsService;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
-import java.util.logging.Level;
 
-import javax.mail.Address;
-import javax.mail.Message;
-import javax.mail.MessagingException;
 import javax.mail.Session;
-import javax.mail.Message.RecipientType;
-import javax.mail.internet.InternetAddress;
 
 import com.google.appengine.api.datastore.DatastoreService;
 import com.google.appengine.api.datastore.DatastoreServiceFactory;
@@ -25,7 +13,6 @@ import com.google.appengine.api.datastore.Entity;
 import com.google.appengine.api.datastore.FetchOptions;
 import com.google.appengine.api.datastore.PreparedQuery;
 import com.google.appengine.api.datastore.Query;
-import com.google.appengine.api.datastore.Text;
 
 public class GAEStatisticsServiceImpl implements StatisticsService {
 
@@ -36,6 +23,8 @@ public class GAEStatisticsServiceImpl implements StatisticsService {
 	private static final String STATISTICS_MANUAL_MODERATE_KIND = "stat_manual_moderate";
 	private static final String STATISTICS_ERROR_KIND = "stat_error";
 	private static final String STATISTICS_SKIP_KIND = "stat_skip";
+	
+	private static final String STATISTICS_PERFIX = "stat_";
 	
 	private static final String WHEN_PROP = "when";
 	private static final String SENDER_PROP = "sender";
@@ -126,68 +115,59 @@ public class GAEStatisticsServiceImpl implements StatisticsService {
 	@Override
 	public int countRemoveRequests(Date from) throws StatisticsServiceException {
 
-		ensureDatastore();
-		
-		Query q;
-		
-		if( from != null ){
-			
-			q = new Query( STATISTICS_REMOVE_KIND )
-					.addFilter(
-							WHEN_PROP,
-							Query.FilterOperator.GREATER_THAN,
-							from);
-			
-		} else {
-		
-			q = new Query( STATISTICS_REMOVE_KIND );
-			
-		}
-		
-		PreparedQuery pq = datastore.prepare(q);
-		
-		return pq.countEntities( FetchOptions.Builder.withDefaults() );
+		return getCount( from , STATISTICS_REMOVE_KIND );
 		
 	}
 
 	@Override
 	public int countSkipRequests(Date from) throws StatisticsServiceException {
 		
-		ensureDatastore();
-		
-		Query q;
-		
-		if( from != null ){
-			
-			q = new Query( STATISTICS_SKIP_KIND )
-					.addFilter(
-							WHEN_PROP,
-							Query.FilterOperator.GREATER_THAN,
-							from);
-			
-		} else {
-		
-			q = new Query( STATISTICS_SKIP_KIND );
-			
-		}
-		
-		PreparedQuery pq = datastore.prepare(q);
-		
-		return pq.countEntities( FetchOptions.Builder.withDefaults() );
+		return getCount( from , STATISTICS_SKIP_KIND );
 		
 	}
-
+	
 	@Override
 	public int countManualModerations(Date from)
 			throws StatisticsServiceException {
 
+		return getCount( from , STATISTICS_MANUAL_MODERATE_KIND );		
+		
+	}
+
+	@Override
+	public void logCustom(String statId, Date when, String address,
+			String subject) throws StatisticsServiceException {
+		
+		ensureDatastore();
+
+		Date now = new Date();
+
+		Entity messageEnt = new Entity( STATISTICS_PERFIX + statId , now.getTime() );
+		messageEnt.setProperty( WHEN_PROP , when );
+		messageEnt.setProperty( SENDER_PROP , address );
+		messageEnt.setProperty( SUBJECT_PROP , subject );
+
+		datastore.put( messageEnt );
+		
+	}
+
+	@Override
+	public int countCustom(String statId, Date from)
+			throws StatisticsServiceException {
+		
+		return getCount( from , STATISTICS_PERFIX + statId );
+		
+	}
+	
+	private int getCount( Date from , String kind) throws StatisticsServiceException {
+		
 		ensureDatastore();
 		
 		Query q;
 		
 		if( from != null ){
 			
-			q = new Query( STATISTICS_MANUAL_MODERATE_KIND )
+			q = new Query( kind )
 					.addFilter(
 							WHEN_PROP,
 							Query.FilterOperator.GREATER_THAN,
@@ -195,14 +175,13 @@ public class GAEStatisticsServiceImpl implements StatisticsService {
 			
 		} else {
 		
-			q = new Query( STATISTICS_MANUAL_MODERATE_KIND );
+			q = new Query( kind );
 			
 		}
 		
 		PreparedQuery pq = datastore.prepare(q);
 		
 		return pq.countEntities( FetchOptions.Builder.withDefaults() );
-
 		
 	}
 

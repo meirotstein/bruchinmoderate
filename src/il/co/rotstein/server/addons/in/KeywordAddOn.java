@@ -1,6 +1,7 @@
 package il.co.rotstein.server.addons.in;
 
 import java.io.UnsupportedEncodingException;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
@@ -15,16 +16,32 @@ import il.co.rotstein.server.addons.InAddOn;
 import il.co.rotstein.server.common.StringPatterns;
 import il.co.rotstein.server.config.Configurations;
 import il.co.rotstein.server.exception.MailOperationException;
+import il.co.rotstein.server.exception.StatisticsServiceException;
 import il.co.rotstein.server.mail.MailHandler;
 import il.co.rotstein.server.mail.MailUtils;
+import il.co.rotstein.server.statistics.StatisticsService;
+import il.co.rotstein.server.statistics.StatisticsServiceFactory;
 
 public class KeywordAddOn extends InAddOn {
-
+	
+	public static final String ID = "KeywordAddOn"; 
+	
 	private final Logger log = Logger.getLogger( KeywordAddOn.class.getName() );
-
+	
 	//private static int FIRST_CHARS_TO_CHECK = 35;
 
 	private Map<String, Integer> keywords;
+	private StatisticsService statSrvs = null;
+	
+	@Override
+	public void init( String[] parameters ) {
+		super.init( parameters );
+		try {
+			statSrvs = StatisticsServiceFactory.getService( null );
+		} catch (StatisticsServiceException e) {
+			// do nothing
+		}		
+	}
 
 	@Override
 	public AddOnResult manipulate( Message message ) {
@@ -111,6 +128,16 @@ public class KeywordAddOn extends InAddOn {
 							String.format( StringPatterns.MISTAKE_ALERT_BODY , subject ),
 							"UTF-16",
 							false);
+					
+					if( statSrvs != null ) {
+						try {
+							
+							statSrvs.logCustom( ID , new Date() , sender , subject );
+							
+						} catch (StatisticsServiceException e) {
+							log.log( Level.WARNING , "Fail to collect statistics for KeywordAddOn" , e );
+						}
+					}
 					
 					break;
 

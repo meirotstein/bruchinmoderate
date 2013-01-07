@@ -3,6 +3,7 @@ package il.co.rotstein.server;
 import il.co.rotstein.server.addons.AddOnsManager;
 import il.co.rotstein.server.addons.InAddOn;
 import il.co.rotstein.server.addons.AddOn.AddOnResult;
+import il.co.rotstein.server.addons.in.KeywordAddOn;
 import il.co.rotstein.server.common.StringPatterns;
 import il.co.rotstein.server.config.Configurations;
 import il.co.rotstein.server.exception.MailOperationException;
@@ -36,10 +37,6 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.apache.xml.utils.WrongParserException;
-
-import com.google.gwt.core.client.ScriptInjector.FromString;
 
 public class ModerationService extends HttpServlet {
 
@@ -343,6 +340,8 @@ public class ModerationService extends HttpServlet {
 				int skipped = statService.countSkipRequests(from);
 				int manual = statService.countManualModerations(from);
 				int removed = statService.countRemoveRequests(from);
+				int alerted = statService.countCustom( KeywordAddOn.ID , from );
+				
 
 				StringBuilder sb = new StringBuilder();
 				
@@ -360,6 +359,10 @@ public class ModerationService extends HttpServlet {
 				
 				sb.append( "<b>Removed messages: </b>" );
 				sb.append( removed );
+				sb.append( "<br>" );
+				
+				sb.append( "<b>Alerted messages: </b>" );
+				sb.append( alerted );
 				sb.append( "<br>" );
 				
 				MailHandler.send( 	SUPER_ADMIN , 
