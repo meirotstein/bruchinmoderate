@@ -1,5 +1,5 @@
 {
-	ignore_users : ["reuts@me.com"],
+	ignore_users : ["reuts@me.com","reeuutt@gmail.com"],
 	group_name : "bruchin",
 	super_admin : "meir@rotstein.co.il",
 	min_pending_minuts : 5,
