@@ -15,6 +15,7 @@ import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Session;
 
+import org.apache.commons.lang.StringEscapeUtils;
 import org.junit.Test;
 
 public class ContentTest {
@@ -50,7 +51,7 @@ public class ContentTest {
 				
 				if( subjectMtchr.find() ) {
 				
-					expectedSubject = results.substring( subjectMtchr.start() + 8 , subjectMtchr.end() ).trim();
+					expectedSubject = StringEscapeUtils.unescapeJavaScript( results.substring( subjectMtchr.start() + 8 , subjectMtchr.end() ).trim() );
 				
 				} else {
 					fail("Test #  " + ei.getCurrenIndex() + " cannot find result match");
@@ -63,7 +64,7 @@ public class ContentTest {
 				
 				if( contentMtchr.find() ) {
 					
-					expectedContent = results.substring( contentMtchr.start() + 8 , contentMtchr.end() );
+					expectedContent = StringEscapeUtils.unescapeJavaScript( results.substring( contentMtchr.start() + 8 , contentMtchr.end() ) );
 					
 				} else {
 					fail("Test #  " + ei.getCurrenIndex() + " cannot find content match");
@@ -111,6 +112,8 @@ public class ContentTest {
 						expectedContent.replaceAll("\r", "").replaceAll("\n", "").equals( cont.replaceAll("\r", "").replaceAll("\n", "") ));
 				}
 				
+				
+				System.out.println("Test # " + ei.getCurrenIndex() + " OK ");
 				
 //				expectedContent.length();
 				

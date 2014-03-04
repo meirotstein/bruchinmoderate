@@ -3,6 +3,7 @@ package il.co.rotstein.server.addons;
 import il.co.rotstein.server.config.Configurations.AddOnConfiguration;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -27,14 +28,16 @@ public class AddOnsManager {
 				try {
 					
 					Class<?> aClass = cLoader.loadClass( addOnClass );
-					AddOn addOn = ( AddOn ) aClass.newInstance();					
-					addOn.init( addOnConfig.getParameters() );
+					AddOn addOn = ( AddOn ) aClass.newInstance();
+					
+					String[] params = addOnConfig.getParameters();
+					addOn.init( params );
 					
 					if ( addOn instanceof InAddOn ){
 						inAddOns.add( ( InAddOn ) addOn );
 					} 
 					
-					log.log( Level.FINE , "Add On class loaded: " + addOnClass );
+					log.log( Level.FINE , "Add On class loaded: " + addOnClass + " with parameters: " + Arrays.toString(params));
 					//to be expanded as other types of addons will be added, inshaAlla. 
 					
 				} catch ( ClassNotFoundException e ) {
